@@ -1,0 +1,321 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 70px;
+  margin-bottom: 100px;
+  background-color: #ffffff;
+  color: #556270;
+}
+
+a {
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+}
+.page-lead {
+  padding-bottom: 30px;
+}
+.content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.full-height {
+  height: calc(100vh - 70px);
+}
+
+// Home Page
+#imac-screens {
+  position: absolute;
+  top:49px;
+  left:42px;
+}
+
+// About Page
+#about {
+  background-color: #ffffff;
+}
+.title {
+  padding-bottom: 30px;
+}
+#functions {
+  color: #ffffff;
+  background-color: #556270;
+}
+.purpose H3 {
+  text-align: center;
+}
+.purpose object {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#facts {
+  color: #556270;
+  background-color: #ffffff;
+}
+#users {
+  color: #fff;
+  background-color: #23BBD8;
+}
+#team {
+  color: #556270;
+  background-color: #ffffff;
+}
+.management {
+  color: #fff;
+  background-color: #4AE8C2;
+}
+.development {
+  color: #fff;
+  background-color: #2DC3D0;
+}
+.research {
+  color: #fff;
+  background-color: #27328C;
+}
+ul.team-links li {
+  display: inline;
+  padding-right: 10px;
+}
+ul.team-links a {
+  color: #fff;
+}
+ul.team-links hover {
+  color: #4AE8C2;
+  text-decoration: none;
+}
+ul.team-links {
+  padding-left: 0px;
+  position: absolute;
+
+    /* This works with `top: 50%;`... */
+    left: 50%;
+
+    /* ...and `translate(-50%, -50%)` as well. */
+    transform: translatex(-50%);
+}
+hr.team-card-separator {
+  margin: 15px auto;
+  width: 60%;
+}
+
+// Features Page
+.feature h2 {
+  margin-top: 0px;
+}
+.feature-thumbnail {
+  padding: 10px 10px;
+}
+.feature-pad {
+  padding: 0px 30px 10px;
+}
+.feature-graphic {
+  overflow: hidden;
+}
+#project-management {
+  color: #ffffff;
+  background-color: #4ECDC4;
+}
+#project-management img {
+  padding-top: 80px;
+}
+#data-collection {
+  color: #ffffff;
+  background-color: #556270;
+}
+#data-processing {
+  color: #ffffff;
+  background-color: #ABD64A;
+}
+#data-management {
+  color: #ffffff;
+  background-color: #556270;
+}
+#data-visualization {
+  color: #ffffff;
+  background-color: #27328C;
+}
+#data-visualization img {
+  padding-top: 80px;
+}
+
+#data-dissemination {
+  color: #ffffff;
+  background-color: #556270;
+}
+#customizable {
+  color: #ffffff;
+  background-color: #4ECDC4;
+}
+#customizable img {
+  padding-top: 80px;
+}
+#responsive {
+  color: #ffffff;
+  background-color: #556270;
+}
+
+// FAQ Page
+.faq H3 {
+  margin-top: 0px;
+}
+.faq-answers {
+  padding-top: 10px;
+}
+.faq-answer {
+  padding-bottom: 5px;
+}
+.contact-information-section {
+  padding: 0px 0px 20px;
+}
+
+// Contact Page
+.contact-information-section h4 {
+  margin-top: 0px;
+}
+.panel-yellow {
+  color: #fff;
+  background-color: #F0CC00;
+  border-color: #F0CC00;
+}
+.panel-navy {
+  color: #fff;
+  background-color: #27328C;
+  border-color: #27328C;
+}
+.panel-blue {
+  color: #fff;
+  background-color: #2DC3D0;
+  border-color: #2DC3D0;
+}
+.panel-turquoise {
+  color: #fff;
+  background-color: #4AE8C2;
+  border-color: #4AE8C2;
+}
+address {
+  margin-bottom: 10px;
+}
+
+// Footer
+
+img.grayscale {
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  -webkit-transition: all .6s ease;
+}
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #556270;
+  color: #fff;
+  border-color: #47525d;
+  border-top: 1px; 
+}
+
+ul.footer-links {
+  padding: 40px 0px;
+  margin: 0px;
+}
+ul.footer-links li {
+  display: inline;
+  margin-right: 15px;
+}
+ul.footer-links li:last-child {
+  margin-right: 0px;
+}
+ul.footer-links a {
+  color: #fff;
+}
+ul.footer-links a:hover {
+  color: #4AE8C2;
+  text-decoration: none;
+}
+
+.footer-logo {
+  padding: 18px 0px;
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.latched {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.second-panel {
+  margin-top: calc(100vh - 70px);
+}
+.box{
+  position: relative;
+  width: 100%;   /* desired width */
+}
+.box:before{
+  content: "";
+  display: block;
+  padding-top: 100%;  /* initial ratio of 1:1*/
+}
+.box-content{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.team-member:hover .overlay {opacity:0.8;}
+.overlay {
+  opacity:0;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.pad {
+  padding: 0px 14px;
+}
+
+.pad-big {
+  padding: 0px 30px;
+}

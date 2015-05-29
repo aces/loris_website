@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LORIS</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/loris.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img style="max-width:100px;" alt="Brand" src="img/logo/loris3_white.svg"> 
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="getstarted.html">Get Started</a></li>
+                        <li class="active"><a href="support.html">Support</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div><!--/.navbar-collapse -->
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="title">
+                <h1>FAQ</h1>
+                <p class="lead">
+                    If you can't find the answer you're looking for, please <a href="contact.html">contact us</a>.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="#general" data-toggle="tab" class="list-group-item active">
+                            <span class="badge">9</span>
+                            General
+                        </a>
+                        <a href="#installation" data-toggle="tab" class="list-group-item">
+                            <span class="badge">2</span>
+                            Installation and Setup
+                        </a>
+                    </div>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" disabled>
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" disabled>Go!</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content">
+                        <div class="tab-pane faq fade in active" id="general">
+                            <h3>General</h3>
+                            <div class="faq-navigation">
+                                <ol>
+                                    <li><a href="#general3">What is LORIS used for?</a></li>
+                                    <li><a href="#general4">How easily can I import data from another data source into LORIS?</a></li>
+                                    <li><a href="#general5">How easily can I export data from LORIS to other software/my analysis tools?</a></li>
+                                    <li><a href="#general6">How is LORIS licensed? Is it open source?</a></li>
+                                    <li><a href="#general7">What imaging data formats can LORIS handle?</a></li>
+                                    <li><a href="#general8">Can I have custom scoring for clinical/neuropsychological measures?</a></li>
+                                    <li><a href="#general9">How much coding is required for clinical/neuropsychological measures?</a></li>
+                                    <li><a href="#general10">How fast can LORIS query and extract data for download from large datasets?</a></li>
+                                    <li><a href="#general11">How is data validated in LORIS?</a></li>
+                                </ol>
+                            </div>
+                            <div class="faq-answers">
+                                <div class="faq-answer" id="general3">
+                                    <h4>What is LORIS used for?</h4>
+                                    <p><li>Project design, data collection, management, dissemination</li>
+                                            <li>Synthesis and correlation of data across different modalities (imaging, behavioural, genetic)</li></p>
+                                </div>
+                                <div class="faq-answer" id="general4">
+                                    <h4>How easily can I import data from another data source into LORIS?</h4>
+                                    <p>LORIS can import data via Excel or CSV uploaders, as well as linking to other data repositories via custom pipelines.</p>
+                                </div>
+                                <div class="faq-answer" id="general5">
+                                    <h4>How easily can I export data from LORIS to other software/my analysis tools?</h4>
+                                    <p>Data is queried and downloaded via the Data Querying Tool. Hooks exist to send this data to processing and analysis pipelines.</p>
+                                </div>
+                                <div class="faq-answer" id="general6">
+                                    <h4>How is LORIS licensed? Is it open source?</h4>
+                                    <p>LORIS is open source.</p>
+                                </div>
+                                <div class="faq-answer" id="general7">
+                                    <h4>What imaging data formats can LORIS handle?</h4>
+                                    <p>LORIS is designed to process Minc, nifti, MEG, freesurfer, and processed input data, and can be customized for other modalities via fully configurable pipeline and visualization tools. Raw dicoms are the foundation of the core visualization utilities. Conversion to formats such as minc and nifti can be easily embedded in LORIS data handling pipelines.</p>
+                                </div>
+                                <div class="faq-answer" id="general8">
+                                    <h4>Can I have custom scoring for clinical/neuropsychological measures?</h4>
+                                    <p>Yes. Custom scoring can be implemented by script, in a variety of languages including PHP, Python or Matlab.</p>
+                                </div>
+                                <div class="faq-answer" id="general9">
+                                    <h4>How much coding is required for clinical/neuropsychological measures?</h4>
+                                    <p>LORIS’ Instrument Builder module enables non-technical staff to create many simple forms. Scoring and field dependencies can be implemented in a wide variety of scripting languages.</p>
+                                </div>
+                                <div class="faq-answer" id="general10">
+                                    <h4>How fast can LORIS query and extract data for download from large datasets?</h4>
+                                    <p>LORIS’ couchDB-based Data Querying Tool outperforms traditional MySQL-based cached retrieval by a factor of 4 for data querying and extraction. (Based on a medium-sized study with 7500 instrument datasets.)</p>
+                                </div>
+                                <div class="faq-answer" id="general11">
+                                    <h4>How is data validated in LORIS?</h4>
+                                    <p>LORIS has many Quality Control features enabling study staff to review, flag and track data quality at every level. Additional features in the Statistics module provide at-a-glance outlier identification.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane faq fade" id="installation">
+                            <h3>Installation</h3>
+                            <ol>
+                                <li><a href="#installation1">What is needed to run LORIS?</a></li>
+                                <li><a href="#installation2">How much time does LORIS take to install?</a></li>
+                            </ol>
+                            <div class="faq-answers">
+                                <div class="faq-answer" id="installation1">
+                                    <h4>What is needed to run LORIS?</h4>
+                                    <p>LORIS can run on any Linux server, and has been tested extensively for Ubuntu 14.04. Data storage may be located on the same server, or at a different location.  The amount of data storage required is variable depending on study size and imaging data modalities (e.g. MRI, MEG). Software packages such as git, couchDB and LAMP setup are verified or installed during the Loris install process.</p>
+                                </div>
+                                <div class="faq-answer" id="installation2">
+                                    <h4>How much time does LORIS take to install?</h4>
+                                    <p>The initial installation in many cases takes only a few minutes. Configuration and study-specific setup require additional steps.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="col-md-8">
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/aces/Loris">GitHub</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-logo">
+                    <a href="http://mcin-cnim.ca/"><img src="img/logo/logo2.png" class="img-responsive pull-right grayscale"></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
