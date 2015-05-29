@@ -118,10 +118,9 @@ hr.team-card-separator {
 .feature-graphic-right {
   overflow: hidden;
 }
-.feature-graphic-left {
-  overflow-x: hidden;
-  position:absolute;
-  left:0;
+
+.image-right {
+  float:right;
 }
 #datacollection {
   color: #ffffff;
@@ -133,6 +132,9 @@ hr.team-card-separator {
 #datamanagement {
   color: #ffffff;
   background-color: #556270;
+}
+#datamanagement img {
+  padding-top: 80px;
 }
 #qualitycontrol {
   color: #ffffff;
