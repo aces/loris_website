@@ -11,7 +11,7 @@ Currently the website consists of several static html pages and uses bootstrap c
 
 Please fork the repository and send pull requests to contribute.
 
-When developing, you will need to run a small webserver for all of the features to work. You can do this with php, for example, by running `php -S localhost:8000` from the repository directory.
+When developing, you will need to run a small webserver for all of the features to work. You can do this with php version 5.4 or above, for example, by running `php -S localhost:8000` from the repository directory.
 
 Please use the GitHub Issue tracker to report bugs and request features and improvements.
 
