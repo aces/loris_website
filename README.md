@@ -1,4 +1,6 @@
-# loris.ca
+# DEPRECATED - this codebase has not been updated in  while. see https://github.com/lorisdb/lorisdb.github.io for latest version
+
+# loris.ca 
 The public website of LORIS
 
 ### Overview
