@@ -1,263 +1,495 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>LORIS</title>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LORIS | Features</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="LORIS contains a host of robust features.">
+  <meta name="author" content="Derek Lo 2015">
 
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/loris.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400italic,100,300,400,500' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css">
+<![endif]-->
+<link rel="stylesheet" href="css/slicknav.css">
+<link href="css/common_styles.css" rel="stylesheet" type="text/css">
+<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.slicknav.js"></script>
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img style="max-width:100px;" alt="Brand" src="img/logo/loris3_white.svg"> 
-                    </a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="features.html">Features</a></li>
-                        <li><a href="getstarted.html">Get Started</a></li>
-                        <li><a href="support.html">Support</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div><!--/.navbar-collapse -->
-            </div>
-        </nav>
+<!-- lightbox script -->
+<script src="js/jquery.lighter.js" type="text/javascript"></script>
+<link href="css/jquery.lighter.css" rel="stylesheet" type="text/css">
 
-        <div id="features" class="full-height latched">
-            <div class="container content">
-                <div class="title">
-                    <h1>Features</h1>
-                    <p class="lead">Sed ante ligula, sagittis et placerat et, tempus in ante. Vivamus hendrerit laoreet purus, in mollis justo rhoncus non. Morbi eu neque tortor. In laoreet nisl quis ante dapibus dapibus. Nullam vitae purus sodales, convallis ante eget, ornare velit.</p>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6 feature-thumbnail">
-                        <div class="feature-pad">
-                            <img src="img/pages/features/icons/datacollection.svg" class="img-responsive">
-                        </div>
-                        <h4>Data Collection</h4>
-                        <p>Sed ante ligula, sagittis et placerat et, tempus in ante.</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 feature-thumbnail">
-                        <div class="feature-pad">
-                            <img src="img/pages/features/icons/datamanagement.svg" class="img-responsive">
-                        </div>
-                        <h4>Data Management</h4>
-                        <p>Sed ante ligula, sagittis et placerat et, tempus in ante.</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 feature-thumbnail">
-                        <div class="feature-pad">
-                            <img src="img/pages/features/icons/qualitycontrol.svg" class="img-responsive">
-                        </div>
-                        <h4>Quality Control</h4>
-                        <p>Sed ante ligula, sagittis et placerat et, tempus in ante.</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 feature-thumbnail">
-                        <div class="feature-pad">
-                            <img src="img/pages/features/icons/imaging.svg" class="img-responsive">
-                        </div>
-                        <h4>Imaging</h4>
-                        <p>Sed ante ligula, sagittis et placerat et, tempus in ante.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6 feature-thumbnail">
-                        <div class="feature-pad">
-                            <img src="img/pages/features/icons/visualization.svg" class="img-responsive">
-                        </div>
-                        <h4>Visualization</h4>
-                        <p>Sed ante ligula, sagittis et placerat et, tempus in ante.</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 feature-thumbnail">
-                        <div class="feature-pad">
-                            <img src="img/pages/features/icons/datadissemination.svg" class="img-responsive">
-                        </div>
-                        <h4>Data Dissemination</h4>
-                        <p>Looks great on all your devices.</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 feature-thumbnail">
-                        <div class="feature-pad">
-                            <img src="img/pages/features/icons/customizable.svg" class="img-responsive">
-                        </div>
-                        <h4>Customizable</h4>
-                        <p>Sed ante ligula, sagittis et placerat et, tempus in ante.</p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 feature-thumbnail">
-                        <div class="feature-pad">
-                            <img src="img/pages/features/icons/responsive.svg" class="img-responsive">
-                        </div>
-                        <h4>Responsive</h4>
-                        <p>Sed ante ligula, sagittis et placerat et, tempus in ante.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feature second-panel feature-graphic-right" id="datacollection">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 content">
-                        <h2>Data Collection</h2>
-                        <p><b>Behavioural</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus euismod massa, a tempus massa sagittis at. Curabitur sed est nec turpis vestibulum volutpat ac id dui.</p>
-                        <p><b>Imaging</b> Sed non ligula erat. Nullam et feugiat sem. Donec porta sapien nec placerat elementum.</p>
-                        <p><b>Genetics</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus euismod massa, a tempus massa sagittis at. Curabitur sed est nec turpis vestibulum volutpat ac id dui.</p>
-                        <p><b>Biosamples</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus euismod massa, a tempus massa sagittis at. Curabitur sed est nec turpis vestibulum volutpat ac id dui.</p>
-                    </div>
-                    <div class="col-md-6 col-md-offset-1 hidden-xs">
-                        <img src="img/pages/features/datacollection.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feature" id="datamanagement">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 hidden-xs feature-graphic-left">
-                        <img class="image-right" src="img/pages/features/datamanagement.png">
-                    </div>
-                    <div class="col-md-5 col-md-offset-1 content">
-                        <h2>Data Management</h2>
-                        <p><b>Feature</b> Etiam vestibulum dui urna, vel convallis magna dictum ut. Sed leo ipsum, volutpat vel nisl vitae, commodo efficitur purus.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feature feature-graphic-right" id="qualitycontrol">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 content">
-                        <h2>Quality Control</h2>
-                        <p><b>Data Annotation</b> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lectus neque, cursus vitae tellus et, efficitur lacinia mi.</p>
-                        <p><b>Double Data Entry and Conflict Resolver</b> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lectus neque, cursus vitae tellus et, efficitur lacinia mi.</p>
-                        <p><b>Imaging Feedback</b> Pellentesque commodo scelerisque massa molestie facilisis. Donec porttitor sit amet mauris a bibendum. Mauris sapien nulla, porttitor nec viverra vitae, gravida at massa.</p>
-                        <p><b>Radiological Reviews</b> Pellentesque commodo scelerisque massa molestie facilisis. Donec porttitor sit amet mauris a bibendum. Mauris sapien nulla, porttitor nec viverra vitae, gravida at massa.</p>
-                        <p><b>Outlier Detection</b> Pellentesque commodo scelerisque massa molestie facilisis. Donec porttitor sit amet mauris a bibendum. Mauris sapien nulla, porttitor nec viverra vitae, gravida at massa.</p>
-                    </div>
-                    <div class="col-md-6 col-md-offset-1 hidden-xs">
-                        <img src="img/pages/features/qualitycontrol.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feature" id="imaging">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 hidden-xs feature-graphic-left">
-                        <img class="image-right" src="img/pages/features/imaging2.png">
-                    </div>
-                    <div class="col-md-5 col-md-offset-1 content">
-                        <h2>Imaging</h2>
-                        <p><b>MRI Upload</b> Etiam vel turpis velit. Integer pulvinar diam sed nunc porta malesuada. Curabitur tincidunt ligula in leo rhoncus, nec gravida erat tempor.</p>
-                        <p><b>Imaging Pre-Processing</b> Maecenas ultricies consequat elit non porttitor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                        <p><b>Quality Control</b> Curabitur ultrices tempor tellus, vel rutrum metus blandit sed. Nam sollicitudin, quam sed fermentum finibus, metus arcu pharetra felis, non blandit dolor purus quis magna.</p>
-                        <p><b>Multi-modal</b> Sed non ligula erat. Nullam et feugiat sem. Donec porta sapien nec placerat elementum.</p>
-                        <p><b>BrainBrowser</b> Sed non ligula erat. Nullam et feugiat sem. Donec porta sapien nec placerat elementum.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feature feature-graphic-right" id="visualization">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 content">
-                        <h2>Visualization</h2>
-                        <p><b>Dashboard</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus euismod massa, a tempus massa sagittis at. Curabitur sed est nec turpis vestibulum volutpat ac id dui.</p>
-                        <p><b>Study Statistics</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus euismod massa, a tempus massa sagittis at. Curabitur sed est nec turpis vestibulum volutpat ac id dui.</p>
-                        <p><b>BrainBrowser</b> Sed non ligula erat. Nullam et feugiat sem. Donec porta sapien nec placerat elementum.</p>
-                    </div>
-                    <div class="col-md-6 col-md-offset-1 hidden-xs">
-                        <img src="img/pages/features/visualization.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feature" id="datadissemination">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 hidden-xs">
-                    </div>
-                    <div class="col-md-5 col-md-offset-1 content">
-                        <h2>Data Dissemination</h2>
-                        <p><b>Data Query Tool</b> Etiam vestibulum dui urna, vel convallis magna dictum ut. Sed leo ipsum, volutpat vel nisl vitae, commodo efficitur purus.</p>
-                        <p><b>File Download</b> Integer quis malesuada purus. Suspendisse a vulputate nibh, id efficitur urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p><b>Data permissions</b> Integer quis malesuada purus. Suspendisse a vulputate nibh, id efficitur urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feature feature-graphic-right" id="customizable">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 content">
-                        <h2>Customizable</h2>
-                        <p><b>Configuration module</b> Curabitur ultrices tempor tellus, vel rutrum metus blandit sed. Nam sollicitudin, quam sed fermentum finibus, metus arcu pharetra felis, non blandit dolor purus quis magna.</p>
-                        <p><b>Easily add and remove modules</b> Etiam vel turpis velit. Integer pulvinar diam sed nunc porta malesuada. Curabitur tincidunt ligula in leo rhoncus, nec gravida erat tempor.</p>
-                        <p><b>Multi-purpose</b> Institutional, public data sharing, multi-modal neuroimaging study, cohorts and projects, etc.</p>
-                        <p><b>Open Source</b> Curabitur ultrices tempor tellus, vel rutrum metus blandit sed. Nam sollicitudin, quam sed fermentum finibus, metus arcu pharetra felis, non blandit dolor purus quis magna.</p>
-                    </div>
-                    <div class="col-md-6 col-md-offset-1 hidden-xs">
-                        <img src="img/pages/features/customizable.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="feature" id="responsive">
-            <div class="container content">
-                <div class="row">
-                    <div class="col-md-6 hidden-xs">
-                        <img class="img-responsive" src="img/pages/features/responsive.png">
-                    </div>
-                    <div class="col-md-5 col-md-offset-1">
-                        <h2>Responsive</h2>
-                        <p><b>Looks great on all devices</b> Etiam vel turpis velit. Integer pulvinar diam sed nunc porta malesuada. Curabitur tincidunt ligula in leo rhoncus, nec gravida erat tempor.</p>
-                        <p><b>Direct Data Entry</b> Maecenas ultricies consequat elit non porttitor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                        <p><b>Designed for Touch Screens</b> Curabitur ultrices tempor tellus, vel rutrum metus blandit sed. Nam sollicitudin, quam sed fermentum finibus, metus arcu pharetra felis, non blandit dolor purus quis magna.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section style="background-color: #fff;">
-            <div class="container content">
-                <p class="lead">Etiam malesuada, purus ac tincidunt consectetur, est orci venenatis orci, vitae suscipit lacus tortor non nibh. Suspendisse a ullamcorper lacus. Suspendisse nec aliquet diam, eget suscipit mauris. Suspendisse eu lorem quam. Proin vitae consectetur nisi.</p>
-                <p class="lead">Introduce viewers to next section of the website...</p>
-            </div>
-        </section>
+<!-- script to match div heights https://github.com/liabru/jquery-match-height-->
+<script src="js/jquery.matchHeight-min.js" type="text/javascript"></script> 
 
-        <footer class="footer">
-            <div class="container">
-                <div class="col-md-8">
-                    <ul class="footer-links">
-                        <li><a href="https://github.com/aces/Loris">GitHub</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 footer-logo">
-                    <a href="http://mcin-cnim.ca/"><img src="img/logo/logo2.png" class="img-responsive pull-right grayscale"></a>
-                </div>
-            </div>
-        </footer>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>
+<!-- jquery easing, nav animation, div height scripts-->
+
+<script>
+$( document ).ready( function() {
+  $('a.ease').bind('click',function(event){
+    var $anchor = $(this);
+
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1250,'easeInOutExpo');
+    event.preventDefault();
+  });
+});
+</script>
+
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="top">
+      <div class="logodiv">
+        <img src="images/LORIS-logo-color.png" alt=""/>
+      </div>
+      <nav>
+        <ul id="main-nav">
+          <li><a href="index.html" class="first">Home</a></li>
+          <li><a href="features.html" class="active">Features</a></li>
+          <li><a href="getstarted.html" class="">Get Started</a></li>
+          <li><a href="faq.html" class="">FAQ</a></li>
+          <li><a href="about.html" class="">About LORIS</a></li>        
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+
+        <!-- slicknav -->
+        <div id="menu">
+            <ul>
+              <li><a href="index.html" class="menu-fx">Home</a></li>
+              <li><a href="features.html" class="menu-fx active">Features</a></li>
+              <li><a href="getstarted.html" class="menu-fx">Get Started</a></li>
+              <li><a href="faq.html" class="menu-fx">FAQ</a></li>
+              <li><a href="about.html" class="menu-fx">About LORIS</a></li>
+              <li><a href="contact.html" class="menu-fx">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="to-top">
+      <div class="parallax-three">
+        <div class="content">
+          <div class="holder-big">
+            <h1 class="center"> Features</h1>
+
+            <p class="bottom-margin">LORIS comes complete with a flexible toolset to manage, process, and disseminate large amounts of data for a variety of study scenarios. Key features include:</p>
+            <div>
+              <div class="three-column">
+                <a href="#data-collection" class="ease">
+                  <div class="blue-content special divheight">
+                  <img src="images/ICON-data.png">
+                  <h3>Data Collection</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>LORIS makes it easy to manage and curate large amounts of data from a variety of sources and formats, with multiple options for input, identification and classification. <a href="#data-collection" class="ease">[read more]</a></p>
+                </div>
+              </div>
+              <div class="three-column">
+                <a href="#data-dissemination" class="ease">
+                  <div class="blue-content special divheight">
+                    <img src="images/ICON-sharing.png" title="Icon created by Freepik">
+                    <h3>Data Sharing</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>Powerful querying and dissemination tools let researchers process and distribute data in a flexible and efficient manner. <a href="#data-dissemination" class="ease">[read more]</a></p>
+                </div>
+              </div>
+              <div class="three-column">
+                <a href="#quality-control" class="ease">
+                  <div class="blue-content special divheight">
+                    <img src="images/ICON-quality.png">
+                    <h3>Quality Control</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>Easy-to-use workflows for verifying clinical and imaging data help researchers produce high-quality datasets and high-confidence results. <a href="#quality-control" class="ease">[read more]</a></p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="three-column">
+                <a href="#data-imaging" class="ease">
+                  <div class="blue-content special divheight">
+                    <img src="images/ICON-imaging.png">
+                    <h3>Neuroimaging</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>Data workflows, integrated 3D visualization and quality annotation tools provide a robust platform for understanding imaging data and results. <a href="#data-imaging" class="ease">[read more]</a></p>    
+                </div>
+              </div>
+              <div class="three-column">
+                <a href="#visualization" class="ease">
+                  <div class="blue-content special divheight">
+                    <img src="images/ICON-visualization.png">
+                    <h3>Visualization</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>LORIS includes several different data visualization toolsets, ranging from dashboard graphs to statistical plots and 3D imaging visualization, enabling users to animate and explore datasets in a variety of formats. <a href="#visualization" class="ease">[read more]</a></p>
+                </div>
+              </div>
+              <div class="three-column">
+                  <a href="#data-management" class="ease">
+                    <div class="blue-content special divheight">
+                      <img src="images/ICON-genes.png">
+                      <h3>Genomics</h3>
+                    </div>
+                  </a>
+                  <div class="clear-content">
+                    <p>Tools for hosting, visualizing, and disseminating summary genetic and epigenetic data enable researchers to cross-link subject data across imaging, behavioural, and genetic elements of interest. <a href="#data-management" class="ease">[read more]</a></p>    
+                  </div>
+              </div>
+              
+            </div>
+            <div>
+              <div class="three-column">
+                <a href="#direct-data" class="ease">
+                  <div class="blue-content special divheight">
+                    <img src="images/ICON-data-entry.png" title="Icon created by Freepik">
+                    <h3>Participant Surveys</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>Study participants can complete questionnaires directly from home using LORIS’ secure online Participant Survey module, on a mobile tablet or home computer. <a href="#direct-data" class="ease">[read more]</a></p>
+                </div>
+              </div>
+              <div class="three-column">
+                <a href="#mobile" class="ease">
+                  <div class="blue-content special divheight">
+                    <img src="images/ICON-responsive.png">
+                  <h3>Mobile-friendly</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>Using responsive web design, LORIS works seamlessly on mobile devices including smartphones and tablets. Clinical data can be entered directly into LORIS via tablet, making patient data collection easier.  <a href="#mobile" class="ease">[read more]</a></p>    
+                </div>
+              </div>
+              <div class="three-column">
+                <a href="#customization" class="ease">
+                  <div class="blue-content special divheight">
+                    <img src="images/ICON-customization.png">
+                  <h3>Customization</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>LORIS’ <em>OPEN SOURCE</em> codebase and user-friendly Configuration module make it easy and transparent to tailor LORIS to any study design and to add custom features. <a href="#customization" class="ease">[read more]</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="clear"></div>
+    </section>
+
+    <section id="data-collection">
+      <div class="feature-section grey">
+        <div class="feature-text-left">
+          <h2>Data Collection</h2>
+          <p>LORIS makes it easy to manage and curate large amounts of data from a variety of sources and formats, with multiple options for input, identification and classification. </p>
+
+          <p>LORIS can accommodate any number of collection sites, complex rule-based visit schedules, project and subject cohort groups.  With a variety of customizable fields for organization and sorting, researchers can access the information they need when they need it.  Easy-to-use data entry interfaces improve efficiency and accuracy in data collection.</p>
+          <ul>
+            <li>
+              <h3>Behavioural And Clinical Data</h3>
+              <p>LORIS allows research staff to enter behavioural and clinical data gathered from a variety of sources over time.  </p>
+            </li>
+            <li>
+              <h3>Imaging Data</h3>
+              <p>Compatible with many types of imaging device file formats (ie. MINC, DICOM, NiFtI) LORIS is designed for maximum compatibility with analyses with software packages like MINC, FSL, SPM, FreeSurfer.</p>
+            </li>
+            <li>
+              <h3>Genetic Data</h3>
+              <p>The Genomic Browser module enables exploration of genomic variant data (CNV, SNP) by sorting and filtering them according to a given annotation, subject attribute(s) and genomic location(s). A direct link to the <a href="https://genome.ucsc.edu/" target="_blank" class="underline">UCSC Genome Browser</a> allows access to genomic contextual information of individual variant locations.</p>
+            </li>
+            <li>
+              <h3>Biosamples</h3>
+              <p>LORIS provides customizable modules for tracking biosample metadata including information on blood samples, cell culture, and environmental samples collected for genomic analysis.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-right">
+          <a href="images/LORIS-home-screen.png" data-lighter><img src="images/LORIS-home-screen.png"></a>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+    <section>
+      <div class="feature-section white" id="data-dissemination">
+        <div class="feature-text-right">
+          <h2>Data Sharing</h2>
+          <p>Powerful querying and dissemination tools let researchers process and distribute data in a flexible and efficient manner.</p>
+          <ul>
+            <li>
+              <h3>Data Query Tool</h3>
+              <p>The LORIS database handles large datasets efficiently, and empowers users with query building tools for generating custom curated datasets for analysis and dissemination.  LORIS’s complete architecture includes NoSQL extension for rapid querying and retrieval capability on very large datasets.</p>
+            </li>
+            <li>
+              <h3>File Downloading</h3>
+              <p>LORIS allows the user to package data for downloading to a local drive permitting data to be moved and saved.</p>
+            </li>
+            <li>
+              <h3>Data Permissions</h3>
+              <p>LORIS can be customized with full user control, featuring multiple levels of permissions and roles, from superuser to radiologist to data entry staff. A combination of fully customizable permissions that are module, site, and edit/view specific provide full control over data entry, access and modification.</p>
+            </li>
+            <li>
+              <h3>User Permissions</h3>
+              <p>LORIS can customize access privileges and restrict authorization to specific users or study groups.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-left">
+          <a href="images/LORIS-sharing-screen.png" data-lighter><img src="images/LORIS-sharing-screen.png"></a>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+ 
+
+    <section>
+      <div class="feature-section blue" id="quality-control">
+        <div class="feature-text-left">
+          <h2>Quality Control</h2>
+          <p>Easy-to-use workflows for verifying clinical and imaging data help researchers produce high-quality datasets and high-confidence results.</p>
+          <ul>
+            <li>
+              <h3>Automated Scoring and Validation</h3>
+              <p>Automatic calculation of behavioural and clinical test scores reduces human error, saves time and ensures scoring consistency across sites and staff.</p>
+            </li>
+            <li>
+              <h3>Double Data Entry and Conflict Resolver</h3>
+              <p>LORIS automatically detects and highlights data entry conflicts to assist research staff in spotting manual input errors.</p>
+            </li>
+            <li>
+              <h3>Outlier Detection</h3>
+              <p>The interactive Statistics module provides at-a-glance outlier detection in behavioural and clinical datasets.  Dashboard notifications can alert users upon login of the statistical outlier.</p>
+            </li>
+            <li>
+              <h3>Scan Protocol Violation</h3>
+              <p>The MRI protocol violation module flags images that do not meet study protocol, with customizable criteria based on study and image specific requirements.  Automated checks ensure that identifying information is removed from scans.</p>
+            </li>
+            <li>
+              <h3>Imaging Quality Control</h3>
+              <p>The Imaging Browser allows expert users to rate and annotate the quality of individual scans, and set pass/fail summary flags to automatically exclude poor quality scans from exportable datasets. Common artifacts can be easily flagged by selecting from a predefined list (e.g. intensity, movement artifacts, entropy ratings, coverage).</p>
+            </li>
+            <li>
+              <h3>Radiological Reviews</h3>
+              <p>Radiologists are able to independently review subject scans based on customizable parameters (e.g. size of subarachnoid or perivascular spaces) and record detailed annotations alongside the imaging data.</p>
+              <p>Conflicts between two reviewers are flagged for further discussion or review. Based on these reviews, a subject may be included or excluded from the study.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-right">
+          <a href="images/LORIS-quality-screen.png" data-lighter><img src="images/LORIS-quality-screen.png"></a>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+    <section>
+      <div class="feature-section white" id="data-imaging">
+        <div class="feature-text-right">
+          <h2>Neuroimaging</h2>
+          <p>Data workflows, integrated 3D visualization and quality annotation tools provide a robust platform for understanding imaging data and results.</p>
+          <ul>
+            <li>
+              <h3>MRI Uploading</h3>
+              <p>LORIS allows the user to upload a variety of MRI scan modalities and metadata.</p>
+            </li>
+            <li>
+              <h3>Imaging Pre-Processing</h3>
+              <p>LORIS is designed to allow automated de-identification and defacing of scans, artifact detection, and contrast-to-noise and signal-to-noise ratio checks, to verify scan quality before insertion into LORIS.</p>
+            </li>
+            <li>
+              <h3>Multi-Modal Data Support</h3>
+              <p>LORIS can be customized to display data from various sources, data formats and imaging modalities (such as PET and MEG), linked with clinical, behavioural and genetic data.</p>
+            </li>
+            <li>
+              <h3>Brain Browsing</h3>
+              <p>Volume visualization and exploration is fully integrated into LORIS via <a href="http://mcin-cnim.ca/neuroimagingtechnologies/brainbrowser/" class="underline" target="_blank">BrainBrowser</a>, enabling users to dynamically compare and navigate through scans in 3D.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-left">
+          <a href="images/LORIS-neuroimaging-screen.png" data-lighter><img src="images/LORIS-neuroimaging-screen.png"></a>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+    <section>
+      <div class="feature-section teal" id="visualization">
+        <div class="feature-text-left">
+          <h2>Visualization</h2>
+          <p>LORIS includes several different data visualization toolsets, enabling users to animate and explore datasets in a variety of formats.</p>
+          <p>Data views and graphical display tools handle multiple formats and modalities, ranging from dashboard graphs to statistical plots and 3D imaging visualization.</p> 
+          <p>LORIS comes pre-packaged with a variety of tools to assist the user in visualizing data:</p>
+          <ul>
+            <li>
+              <h3>Custom Dashboard</h3>
+              <p>Dashboard infographics can be customized to dynamically display the most important study metrics at a glance.</p>
+            </li>
+            <li>
+              <h3>Study Statistics</h3>
+              <p>A variety of tools allow the user to review and visualize summary metrics on data across all modalities and stages of data collection in LORIS.</p>
+            </li>
+            <li>
+              <h3>Brain Browsing</h3>
+              <p>Neuroimaging volume visualization allows dynamic 3D exploration of MRI scans via LORIS’ embedded <a href="http://mcin-cnim.ca/neuroimagingtechnologies/brainbrowser/" class="underline" target="_blank">BrainBrowser</a> software</p>
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-right">
+          <a href="images/LORIS-visualization-screen.png" data-lighter><img src="images/LORIS-visualization-screen.png"></a>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+    <section>
+      <div class="feature-section white" id="data-management">
+        <div class="block bottom-padding-none top-padding-none">
+          <h2 class="center ">Genomics</h2>
+          <p class="feature-p fix">Tools for hosting, visualizing, and disseminating summary genetic and epigenetic data enable researchers to cross-link subject data across imaging, behavioural, and genetic elements of interest.<br>
+
+          <br>Summary genetic and epigenetic data are accessed via an embedded Genomic Browser module. The Genomic Browser enables cross-modal subject profiling, querying, visualization and data dissemination by providing links between subjects’ imaging, clinical and genetic information.<br>
+
+          <br>Genetic datasets (CNV, SNP, CpG, GWAS) are imported directly into LORIS from genetic analysis pipelines or other sharing platforms (e.g., CBRAIN). <br>
+
+          <br>Integrated links to external reference resources (such as the UCSC Genome Browser) facilitate rapid visualization of results.</p>
+          <div class="feature-image-center">
+            <a href="images/LORIS-genomic-screen.png" data-lighter><img src="images/LORIS-genomic-screen.png"></a>
+          </div>   
+        </div>
+        
+        <div class="clear"></div>
+    </section>
+
+    <section>
+      <div class="feature-section blue" id="direct-data">
+        <div class="block bottom-padding-none top-padding-none">
+          <h2 class="center">Participant Surveys</h2>
+          <p class="feature-p fix">Study participants can complete surveys and questionnaires directly from home using LORIS’ secure online Participant Survey module on a mobile tablet or home computer.<br>
+          <br>Clinical data collection is accelerated by enabling direct entry of participant information in advance of clinical visits.   Patient data can be entered directly via tablet, making data gathering during clinical visits easier.  Data collection and display works for all screen sizes, whether web browser, tablet, or mobile handset.</p>
+          <div class="feature-image-center">
+            <a href="images/LORIS-survey-screen.png" data-lighter><img src="images/LORIS-survey-screen.png"></a>
+          </div>   
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="feature-section white" id="mobile">
+        <div class="block top-padding-none">
+          <h2 class="center">MOBILE-FRIENDLY</h2>
+          <p class="feature-p fix">Using responsive web design, LORIS works seamlessly on mobile devices including  smartphones and tablets.  Clinical data can be entered directly into LORIS via tablet, making patient data collection easier.  With the ability to customize the GUI as well as create your own custom CSS file, LORIS can be optimized to work on almost any device.</p>
+          <a href="images/LORIS-home-screen.png" data-lighter><img src="images/LORIS-home-screen.png" class="responsive-big"></a>
+          <a href="images/LORIS-tablet-screen.png" data-lighter><img src="images/LORIS-tablet-screen.png" class="responsive-med"></a>
+          <a href="images/LORIS-phone-screen.png" data-lighter><img src="images/LORIS-phone-screen.png" class="responsive-small"></a>
+        <div class="clear"></div>
+    </section>
+
+    <section>
+      <div class="feature-section grey" id="customization">
+        <div class="feature-text-left">
+          <h2>Customization</h2>
+          <p>LORIS’ <em>OPEN SOURCE</em> codebase and user-friendly Configuration module make it easy and transparent to tailor LORIS to any study design and to add custom features. </p>
+
+          <p>LORIS architecture includes configurable data collection design, adjustable layout features, and tools for building targeted data views according to study specifications.</p>
+          <ul>
+            <li>
+              <h3>MULTI-PURPOSE</h3>
+              <p>LORIS can be customized in a variety of ways to accommodate many kinds of study requirements, making LORIS one of the most versatile data management platforms available.</p>
+            </li>
+            <li>
+              <h3>OPEN SOURCE</h3>
+              <p><em>OPEN SOURCE</em> codebase provides complete access to the LORIS backend, enabling custom modifications and extensions to adapt LORIS to any study design.</p>
+            </li>
+            <li>
+              <h3>CONFIGURATION MODULE</h3>
+              <p>LORIS features and data parameters can be modified directly in the front-end interface of the Configuration Module, facilitating customization and setup of the database backend according to study requirements.</p>
+            </li>
+            <li>
+              <h3>EASILY ADD/REMOVE MODULES</h3>
+              <p>LORIS is designed to easily allow modules to be added and removed as needed, with easy integration of new custom features.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-right">
+          <a href="images/LORIS-customize-screen.png" data-lighter><img src="images/LORIS-customize-screen.png"></a>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+<!--
+    <section id="direct-data">
+      <div class="parallax-four">
+        <h2 class="center">Direct Data Entry</h2>
+        <p class="feature-p fix">Study participants can complete questionnaires directly from home using LORIS’ secure online Survey module, on a mobile tablet or home computer.<br>
+        <br>Clinical data collection is accelerated by enabling direct entry of participant information in advance of clinical visits.   Patient data can be entered directly via tablet, making data gathering during clinical visits easier.  <br>
+        <br> Direct data collection and display works for all screen sizes, whether web browser, tablet, or mobile handset.</p>
+        <div class="clear"></div>
+    </section>
+-->
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Wiki</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <h3>Partners </h3>
+      <div class="clear"></div>
+      <a href="https://www.mcgill.ca/" target="_blank"><img src="images/logo-mcgill.png" alt="McGill Logo"></a>
+      <a href="http://www.mcgill.ca/neuro/" target="_blank"><img src="images/logo-neuro.png" alt="Neuro Logo"></a>
+      <a href="http://mcin-cnim.ca/" target="_blank"><img src="images/logo-mcin.png" alt="MCIN Logo"></a>
+      <a href="http://ludmercentre.ca/" target="_blank"><img src="images/logo-ludmer.png" alt="Ludmer Centre Logo"></a>
+    </footer>
+
+    <a href="#to-top" class="ease"><div class="top-button">TOP</div></a>
+
+<!-- slicknav script, nav animation, div height scripts -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#menu').slicknav({label:''});
+  });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('#top').addClass("mini");
+    }
+    else{
+        $('#top').removeClass("mini");
+    }
+  });
+
+  $(function() {
+    $('.divheight').matchHeight({
+    byRow: true,
+    property: 'height',
+    target: null,
+    remove: false
+    });
+  });
+</script>
+ </body>
+ <html>

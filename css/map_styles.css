@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/*universal reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+/*removes old blue outline when clicked on*/
+
+*:focus {
+	outline: none;
+}
+
+/*new box style */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*float styles*/
+.clearall {
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+/*common styles*/
+
+html, html a {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+body {
+	background: #fff;
+	color: #343434;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 100%;
+}
+body, html {
+	height:100%;
+	width:100%;
+	min-height:400px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+/*Typography Styles*/
+#map-holder  h1, h2, h3, h4, h5 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	margin:0;
+}
+#map-holder  h1 {
+	font-size: 1.875em;
+	margin-bottom: .5em;
+	float: left;
+	display: block;
+	width: 100%;
+}
+
+#map-holder  p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+#map-holder  a, #map-holder  .sb_blue button {
+	-webkit-transition-duration: .25s;
+	-moz-transition-duration: .25s;
+	-ms-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	transition-duration: .25s;
+}
+#map-holder a {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #00b0f0;
+}
+
+/*page styles*/
+#map-holder {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	margin: 0 auto ;
+	padding: 0 7.8%;
+}
+#map-holder  .maphead {
+	width: 100%;
+	min-height: 50px;
+	overflow: auto;
+	margin: 0;
+	padding: 30px 0;
+}
+
+#map-holder  #map{         
+	height:70%;
+	width:80%;
+	margin: 0;
+	float: right;
+}
+#map-holder  #map_canvas {
+	background: #000 !important;
+}
+#map-holder img.lorisLogo {
+	width:10%;
+	height:auto;
+	max-width:100px;
+	margin-right: 50px;	
+}
+#map-holder img.logo {
+	display: block;
+	width:auto;
+	height:auto;
+	max-width: 100%;
+	max-height: 60px;
+	margin: 1em 0;
+}
+
+#map-holder #sidebar{
+	float:left; 
+	height:70%;
+	width:20%;
+	margin: 0 ;
+	overflow: auto;
+	background-color: #797979; 
+}
+
+#map-holder .sb_blue button {
+	text-align: left; 
+	cursor:pointer;
+	background-color: #00b0f0;	
+	background-color: #797979;		
+	margin: 0;
+	border: none;
+	border-left: 5px solid #797979;
+	padding: 0.75em;
+	width:100%; /*defined in scripts.js*/
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: .875em;
+	color: #fff;
+	overflow: hidden;
+}
+#map-holder .sb_blue button:focus {
+	background-color: #44c8f5; 
+	border: none;
+	border-left: 5px solid #44c8f5;
+}
+#map-holder .sb_blue button:hover {
+	/*background-color: #44c8f5; */
+	border-left: 5px solid #f47c20;
+}
+
+
+@media screen and (max-width: 1070px) {
+#map-holder #map {
+	width: 70%;
+}
+#map-holder #sidebar{
+	width: 30%;
+}	
+}
+
+@media screen and (max-width: 715px) {
+#map-holder #map {
+	width: 65%;
+}
+#map-holder #sidebar{
+	width: 35%;
+}	
+}
+
+@media screen and (max-width: 578px) {
+#map-holder .maphead {
+	padding: 15px;
+}
+#map-holder {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0 30px;
+}
+#map-holder #map {
+	width: 100%;
+	height: 50%;
+}
+#map-holder #sidebar {
+	width: 100%;
+	height: 200px;
+	overflow: auto;
+}
+#map-holder button {
+	width: 50% !important;
+	height: 80px;
+	float: left;
+}
+#map-holder img.lorisLogo {
+	width:40%;
+	height:auto;
+	max-width:100px;
+	margin-bottom: 15px;
+}
+}
+
+@media screen and (max-width: 340px) {
+#map-holder button {
+	height: auto;
+	min-height: 80px;
+}
+}

@@ -1,30 +1,28 @@
 <?php
 
-$to = 'info-loris.mni' . '@mcgill.ca';
 $name = $_POST['name'];
-$from = $_POST['email'];
-$subject = 'Message from loris.ca from ' . $name;
-$message = wordwrap($_POST['message'], 70, "\r\n");
-$headers = 'From: ' . $name . "\r\n" .
-           'Reply-To' . $from . "\r\n" .
-           'X-Mailer: PHP/' . phpversion();
+$email = $_POST['email'];
+$message = $_POST['message'];
+$from = 'From: loris.ca'; 
+$to = 'derek.lo@mcgill.ca'; 
+$subject = 'A new message from loris.ca contact form';
 
-if (!$name) {
-    print "name";
-}
-else if (!$from || !filter_var($from, FILTER_VALIDATE_EMAIL)) {
-    print "email";
-}
-else if (!$message) {
-    print "message";
-}
-else {
-    $success = mail($to, $subject, $message, $headers);
-    if ($success) {
-        print "1";
+$human = $_POST['human'];
+
+$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+if ($_POST['submit']) {
+    if ($name != '' && $email != '') {
+        if (mail ($to, $subject, $body, $from)) { 
+            print '<p>Your message has been sent</p><p>(page will reload in 5 seconds)</p>';
+            header('Refresh: 5; url=http://3design-dlo.com/test/loris/contact.html');
+        } else { 
+            print '<p>Something went wrong, please try again!</p><p>(page will reload in 5 seconds)</p>';
+            header('Refresh: 5; url=http://3design-dlo.com/test/loris/contact.html'); 
+        } 
     } else {
-        print "notSent";
-    }
-}
-
+        print '<p>Not sent. Please fill all required fields</p><p>(page will reload in 5 seconds)</p>';
+        header('Refresh: 5; url=http://3design-dlo.com/test/loris/contact.html');
+    } 
+} 
 ?>

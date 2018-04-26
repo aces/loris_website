@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LORIS | About LORIS</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="A little bit about LORIS">
+  <meta name="author" content="Derek Lo 2015">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400italic,100,300,400,500' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css">
+<![endif]-->
+<link rel="stylesheet" href="css/slicknav.css">
+<link href="css/common_styles.css" rel="stylesheet" type="text/css">
+<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+
+<!-- script to match div heights https://github.com/liabru/jquery-match-height-->
+<script src="js/jquery.matchHeight-min.js" type="text/javascript"></script> 
+
+
+<!-- jquery easing, nav animation, div height scripts-->
+
+<script>
+$( document ).ready( function() {
+  $('a.ease').bind('click',function(event){
+    var $anchor = $(this);
+
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500,'easeInOutExpo');
+    event.preventDefault();
+  });
+});
+
+
+</script>
+
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="top">
+      <div class="logodiv">
+        <img src="images/LORIS-logo-color.png" alt=""/>
+      </div>
+      <nav>
+        <ul id="main-nav">
+          <li><a href="index.html" class="first ">Home</a></li>
+          <li><a href="features.html" class="">Features</a></li>
+          <li><a href="getstarted.html" class="">Get Started</a></li>
+          <li><a href="faq.html" class="">FAQ</a></li>
+          <li><a href="about.html" class="active">About LORIS</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+
+        <!-- slicknav -->
+        <div id="menu">
+            <ul>
+              <li><a href="index.html" class="menu-fx" >Home</a></li>
+              <li><a href="features.html" class="menu-fx ">Features</a></li>
+              <li><a href="getstarted.html" class="menu-fx">Get Started</a></li>
+              <li><a href="faq.html" class="menu-fx">FAQ</a></li>
+              <li><a href="about.html" class="menu-fx active">About LORIS</a></li>
+              <li><a href="contact.html" class="menu-fx">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="parallax-seven">
+        <div class="content">
+          <h1 class="center">The History of LORIS</h1>
+          <p><span class="dropcap">LORIS</span> was originally developed for the NIH MRI Study of Normal Brain Development (NIHPD; Evans and Brain Development Cooperative Group, 2006), which was funded in 1999. LORIS was designed from inception to facilitate active multi-site study management and centralized archiving and retrieval of multi-modal data. </p>
+          <p>The initial instance of LORIS included behavioural data entry functionality, scoring algorithms and normative lookup tables coded directly into the database for the full battery of measures. An imaging browser was added soon after for management and quality control procedures. Querying capabilities were eventually included using our Data Query Tool with the public dissemination phase of the study in 2006.</p> 
+          <p>Having completed the full lifecycle of the NIHPD multi-site study, LORIS was adopted as the data platform for IBIS (Infant Brain Imaging Study), the Autism sibling study of brain development. Eventually, LORIS began to proliferate globally to numerous projects.</p>
+          <p>Numerous tools and modules have since been incorporated into the platform to facilitate data management, quality control, and sharing efforts. Web-based imaging visualization was introduced via BrainBrowser in 2011.</p>
+          <p>LORIS’ extensive suite of modules is deployed in numerous projects globally with code contributions coming from an ever-growing community of developers.</p>
+        </div>
+        <div class="clear"></div>  
+      </div>
+    </section>
+
+    <section>
+      <div class="block blue">
+        <h1 class="center bottom-margin">Key References</h1>
+        <!-- <div class="posterholder">
+          <div class="article">
+            <p class="center divheight"><b>The MNI data-sharing and processing ecosystem.</b> Das et al, 2015. <b>Neuroimage</b> (124B:1188–1195).</p>
+            <div class="postersmall">
+            <a href="http://www.sciencedirect.com/science/article/pii/S1053811915008009" target="_blank"><img src="images/LORIS-article-science-direct.jpg">
+            <p class="postertext">Click to View Site</p></a>
+            </div>
+          </div>
+          <div class="article">
+            <p class="center divheight"><b>LORIS: a web-based data management system for multi-center studies.</b> Das et al, 2011. <b>Frontiers in Neuroinformatics</b> (5:37).</p>
+            <div class="postersmall">
+            <a href="images/LORIS-paper-frontiers.pdf" target="_blank"><img src="images/LORIS-paper-frontiers.jpg">
+            <p class="postertext">Click to View PDF</p></a>
+            </div>
+          </div>
+        </div> -->
+        <div class="posterholder">
+          <div class="postersmall">
+            <h3 class="postertext divheight" data-mh="group1">TCyberinfrastructure for Open Science at the Montreal Neurological Institute.</h3>
+            <p class="center" data-mh="group2">Das et al, 2016. <b>Front Neuroinform</b> <a href="https://www.frontiersin.org/articles/10.3389/fninf.2016.00053/full">(10.3389/fninf.2016.00053)</a>.</p>
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5216036/" target="_blank"><img src="images/Loris-paper-frontiers-2016.png">
+            <p class="postertext">Click to View Site</p></a>
+          </div>
+          <div class="postersmall">
+            <h3 class="postertext divheight" data-mh="group1">The MNI data-sharing and processing ecosystem.</h3>
+            <p class="center" data-mh="group2">Das et al, 2015. <b>Neuroimage</b> (124B:1188–1195).</p>
+            <a href="http://www.sciencedirect.com/science/article/pii/S1053811915008009" target="_blank"><img src="images/LORIS-article-science-direct.jpg">
+            <p class="postertext">Click to View Site</p></a>
+          </div>
+          <div class="postersmall ">
+            <h3 class="postertext divheight" data-mh="group1">LORIS: a web-based data management system for multi-center studies.</h3> 
+            <p class="center" data-mh="group2">Das et al, 2011. <b>Frontiers in Neuroinformatics</b> (5:37).</p>
+            <a href="images/LORIS-paper-frontiers.pdf" target="_blank"><img src="images/LORIS-paper-frontiers.jpg">
+            <p class="postertext">Click to View PDF</p></a>
+          </div>
+        </div> 
+        <div class="clear"></div>   
+
+        <div class="posterholder">
+          <div class="postersmall">
+            <h3 class="postertext divheight" data-mh="group1">Data Query Tool</h3>
+            <p class="center" data-mh="group2">D. MacFarlane (HBM 2014)</p>
+            <a href="images/LORIS-poster-enhanced-query.pdf" target="_blank"><img src="images/LORIS-poster-enhanced-query.jpg">
+            <p class="postertext" data-mh="group3">Click to View PDF</p></a>
+          </div>
+          <div class="postersmall ">
+            <h3  class="postertext divheight" data-mh="group1">Imaging Uploader</h3>
+            <p class="center" data-mh="group2">Z. Mohaddes (HBM 2015)</p>
+            <a href="images/LORIS-poster-HBM-imaging-uploader-2015.pdf" target="_blank"><img src="images/LORIS-poster-HBM-imaging-uploader-2015.jpg">
+            <p class="postertext" data-mh="group3">Click to View PDF</p></a>
+          </div>
+          <div class="posterbig ">
+            <h3 class="postertext divheight" data-mh="group1">Imaging Genetics</h3>
+            <p class="center" data-mh="group2"> C. Rogers (HBM 2015)</p>
+            <a href="images/LORIS-poster-christine.pdf" target="_blank"><img src="images/LORIS-poster-christine.jpg">
+            <p class="postertext" data-mh="group3">Click to View PDF</p></a>
+          </div>
+        </div> 
+        <div class="clear"></div>     
+      </div>
+    </section>
+<!--
+    <section>
+      <div class="block blue">
+        <h1 class="center">LORIS</h1>
+        <h2 class="center">Key Papers and Posters</h2>
+        <div class="posterholder">
+          <div class="article">
+            <strong class="whitetext center">The MNI data-sharing and processing ecosystem</strong>
+            <p class="center">Das et al, 2015.</p>
+            <strong class="center whitetext">Neuroimage (124B:1188–1195).</strong>
+            <div class="postersmall margincenter">
+              <a href="http://www.sciencedirect.com/science/article/pii/S1053811915008009" target="_blank"><img src="images/LORIS-article-science-direct.jpg"></a>
+            </div>
+            <p class="postertext">Click Image to View Site</p>
+          </div>
+        </div>
+          <div class="clear"></div>   
+        <div class="posterholder">
+          <div class="postersmall">
+            <h3 class="postertext divheight" data-mh="group1">Data Query Tool</h3>
+            <p class="center" data-mh="group2">D. MacFarlane (HBM 2014)</p>
+            <a href="images/LORIS-poster-enhanced-query.pdf" target="_blank"><img src="images/LORIS-poster-enhanced-query.jpg"></a>
+            <p class="postertext" data-mh="group3">Click Image to View PDF</p>
+          </div>
+          <div class="postersmall ">
+            <h3  class="postertext divheight" data-mh="group1">Imaging Uploader</h3>
+            <p class="center" data-mh="group2">Z. Mohaddes (HBM 2015)</p>
+            <a href="images/LORIS-poster-HBM-imaging-uploader-2015.pdf" target="_blank"><img src="images/LORIS-poster-HBM-imaging-uploader-2015.jpg"></a>
+            <p class="postertext" data-mh="group3">Click Image to View PDF</p>
+          </div>
+          <div class="posterbig ">
+            <h3 class="postertext divheight" data-mh="group1">Imaging Genetics</h3>
+            <p class="center" data-mh="group2"> C. Rogers (HBM 2015)</p>
+            <a href="images/LORIS-poster-christine.pdf" target="_blank"><img src="images/LORIS-poster-christine.jpg"></a> 
+            <p class="postertext" data-mh="group3">Click Image to View PDF</p>
+          </div>
+        </div> 
+        <div class="clear"></div>     
+      </div>  
+    </section>   
+-->
+    <section id="map">
+      <!--<h1 class="mobile-center">LORIS Collaborators</h1>-->
+      <iframe src="map.html" frameborder="0" style="border:0"></iframe>
+    </section> 
+
+    <section id="credits">
+      <div class="credits">
+        <h1 class=""> LORIS Team </h1>
+        <div class="credits-holder">
+          <div class="credits-box">
+            <img src="images/LORIS-team-samir-das.jpg">
+            <div class="credits-text"><h3>Samir Das</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-zia-mohaddes.jpg">
+            <div class="credits-text"><h3>Zia Mohaddes</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-dave-macfarlane.jpg">
+            <div class="credits-text"><h3>Dave MacFarlane</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-christine-rogers.jpg">
+            <div class="credits-text"><h3>Christine Rogers</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-cecile-madjar.jpg">
+            <div class="credits-text"><h3>Cecile Madjar</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-justin.jpg">
+            <div class="credits-text"><h3>Justin Kat</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-nicolas.jpg">
+            <div class="credits-text"><h3>Nicolas Brossard</h3></div>
+          </div>
+          <div class="credits-box">
+            <img src="images/LORIS-team-tara.jpg">
+            <div class="credits-text"><h3>Tara Campbell</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-jordan-stirling.jpg">
+            <div class="credits-text"><h3>Jordan Stirling</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-xavier.jpg">
+            <div class="credits-text"><h3>Xavier Lecours-Boucher</h3></div>
+          </div> 
+<!--           <div class="credits-box">
+            <img src="images/LORIS-team-stella-lee.jpg">
+            <div class="credits-text"><h3>Stella Lee</h3></div>
+          </div> -->
+<!--           <div class="credits-box">
+            <img src="images/LORIS-team-gregory-luneau.jpg">
+            <div class="credits-text"><h3>Gregory Luneau</h3></div>
+          </div>  -->
+          <div class="credits-box">
+            <img src="images/LORIS-team-mouna.jpg">
+            <div class="credits-text"><h3>Mouna Safi-Harab</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-leigh-macintyre.jpg">
+            <div class="credits-text"><h3>Leigh MacIntyre</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-tom-beaudry.jpg">
+            <div class="credits-text"><h3>Tom Beaudry</h3></div>
+          </div>
+          <div class="credits-box">
+            <img src="images/LORIS-team-pierre-emmanuel.jpg">
+            <div class="credits-text"><h3>Pierre-Emmanuel Morin</h3></div>
+          </div>
+          <div class="credits-box">
+            <img src="images/LORIS-team-tristan-glatard.jpg">
+            <div class="credits-text"><h3>Tristan Glatard</h3></div>
+          </div>
+          <div class="credits-box">
+            <img src="images/LORIS-team-penelope.jpg">
+            <div class="credits-text"><h3>Penelope Kostopoulos</h3></div>
+          </div>
+          <div class="credits-box">
+            <img src="images/LORIS-team-carolina-makowski-1.jpg">
+            <div class="credits-text"><h3>Carolina Makowski</h3></div>
+          </div>  
+          <div class="credits-box">
+            <img src="images/LORIS-team-najmeh-khalili.jpg">
+            <div class="credits-text"><h3>Najmeh Khalili-Mahani</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-santiago-paiva.jpg">
+            <div class="credits-text"><h3>Santiago Paiva</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-rida-abou-haidar.jpg">
+            <div class="credits-text"><h3>Rida Abou-Haidar</h3></div>
+          </div>
+          <div class="credits-box">
+            <img src="images/LORIS-team-john-saigle.jpg">
+            <div class="credits-text"><h3>John Saigle</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-wang-shen.jpg">
+            <div class="credits-text"><h3>Wang Shen</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-samira.jpg">
+            <div class="credits-text"><h3>Samira Haikel</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-angie-mosquera.jpg">
+            <div class="credits-text"><h3>Angie Mosquera</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-liza-levitis.jpg">
+            <div class="credits-text"><h3>Liza Levitis</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-meaghan-evans.jpg">
+            <div class="credits-text"><h3>Meaghan Evans</h3></div>
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-sruthy-mathew.jpg">
+            <div class="credits-text"><h3>Sruthy Mathew</h3></div>
+          </div>
+          <div class="credits-box">
+            <img src="images/LORIS-team-zain-virani.jpg">
+            <div class="credits-text"><h3>Zain Virani</h3></div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Wiki</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <h3>Partners </h3>
+      <div class="clear"></div>
+      <a href="https://www.mcgill.ca/" target="_blank"><img src="images/logo-mcgill.png" alt="McGill Logo"></a>
+      <a href="http://www.mcgill.ca/neuro/" target="_blank"><img src="images/logo-neuro.png" alt="Neuro Logo"></a>
+      <a href="http://mcin-cnim.ca/" target="_blank"><img src="images/logo-mcin.png" alt="MCIN Logo"></a>
+      <a href="http://ludmercentre.ca/" target="_blank"><img src="images/logo-ludmer.png" alt="Ludmer Centre Logo"></a>
+    </footer>
+
+    <a href="#to-top" class="ease"><div class="top-button">TOP</div></a> 
+
+<!-- slicknav script, nav animation, div height scripts -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#menu').slicknav({label:''});
+  });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('#top').addClass("mini");
+    }
+    else{
+        $('#top').removeClass("mini");
+    }
+  });
+
+  $(function() {
+    $('.divheight').matchHeight({
+    byRow: true,
+    property: 'height',
+    target: null,
+    remove: false
+    });
+  });
+</script>
+ </body>
+ <html>

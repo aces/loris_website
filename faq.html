@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LORIS | FAQ</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Frequently asked questions about LORIS">
+  <meta name="author" content="Derek Lo 2015">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400italic,100,300,400,500' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css">
+<![endif]-->
+<link rel="stylesheet" href="css/slicknav.css">
+<link href="css/common_styles.css" rel="stylesheet" type="text/css">
+<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+
+<!-- script to match div heights https://github.com/liabru/jquery-match-height-->
+<script src="js/jquery.matchHeight-min.js" type="text/javascript"></script> 
+
+
+<!-- jquery easing, nav animation, div height scripts-->
+
+<script>
+$( document ).ready( function() {
+  $('a.ease').bind('click',function(event){
+    var $anchor = $(this);
+
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1250,'easeInOutExpo');
+    event.preventDefault();
+  });
+});
+</script>
+
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="top">
+      <div class="logodiv">
+        <img src="images/LORIS-logo-color.png" alt=""/>
+      </div>
+      <nav>
+        <ul id="main-nav">
+          <li><a href="index.html" class="first">Home</a></li>
+          <li><a href="features.html" class="">Features</a></li>
+          <li><a href="getstarted.html" class="">Get Started</a></li>
+          <li><a href="faq.html" class="active">FAQ</a></li>
+          <li><a href="about.html" class="">About LORIS</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+
+        <!-- slicknav -->
+        <div id="menu">
+            <ul>
+              <li><a href="index.html" class="menu-fx">Home</a></li>
+              <li><a href="features.html" class="menu-fx">Features</a></li>
+              <li><a href="getstarted.html" class="menu-fx">Get Started</a></li>
+              <li><a href="faq.html" class="menu-fx active">FAQ</a></li>
+              <li><a href="about.html" class="menu-fx">About LORIS</a></li>
+              <li><a href="contact.html" class="menu-fx">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="to-top">
+      <div class="parallax-six">
+        <div class="content">
+          <h1 class="center">FAQ</h1>
+          <div class="feature-p">
+            <h2></h2>
+            <ol class="bottom-margin">
+              <li><a href="#one" class="ease">What is LORIS?</a></li>
+              <li><a href="#two" class="ease">Why use LORIS?</a></li>
+              <li><a href="#three" class="ease">What do I need to install and maintain LORIS?</a></li>
+              <li><a href="#four" class="ease">How do I get LORIS?</a></li>              
+              <li><a href="#five" class="ease">How is LORIS licensed?</a></li>
+              <li><a href="#six" class="ease">How can I import behavioral data from other databases into LORIS?</a></li>
+              <li><a href="#seven" class="ease">How easily can I export data from LORIS to other software for analysis?</a></li>
+              <li><a href="#eight" class="ease">How can I import imaging data into LORIS?</a></li>
+              <li><a href="#nine" class="ease">Can I import MRI data from a scanner to LORIS?</a></li>
+              <li><a href="#ten" class="ease">Can LORIS import any DICOM file or only neuroimaging data?</a></li>
+              <li><a href="#eleven" class="ease">Can I have custom scoring for clinical/neuropsychological measures?</a></li>
+              <li><a href="#twelve" class="ease">How much coding is required for implementing clinical/neuropsychological instruments?</a></li>
+              <li><a href="#thirteen" class="ease">What is a LORIS Instrument?</a></li>
+              <li><a href="#fourteen" class="ease">How can I add copyrighted questionnaires to LORIS?</a></li>
+              <li><a href="#fifteen" class="ease">Can I collect survey data using the LORIS interface?</a></li>
+              <li><a href="#sixteen" class="ease" id="one">How fast can LORIS query and extract data for download from large datasets?</a></li>
+              <li><a href="#seventeen" class="ease">How is data validated in LORIS?</a> </li>
+              <li><a href="#eighteen" class="ease">What is a LORIS Module?</a></li> 
+              <!--<li><a href="#nineteen" class="ease">Where can I find previously coded LORIS instruments?</a></li>-->
+            </ol>
+
+            <strong id="two">1. What is LORIS?</strong>
+            <p>LORIS is a flexible web-based platform that facilitates and centralizes data collection and data management in multi-site, multi-modal integrative neuroimaging and behavioral studies. </p>
+
+            <strong id="three">2. Why use LORIS?</strong>
+            <p>LORIS is designed to simplify integration, management, and dissemination of cohort studies that involve various neuroimaging modalities, behavioral tests, and genetic and neurophysiological data. It provides secure web-based access to data validation and quality control modules, as well as visualization and basic statistical tools. </p>
+
+            <strong id="four">3. What do I need to install and maintain LORIS?</strong>
+            <p>The prerequisites to install LORIS and installation instructions are in the LORIS README. After installation, your LORIS must be configured - see the Initial Setup and Configuration page of <a href="https://github.com/aces/Loris/wiki/Setup" class="underline" target="_blank">the wiki</a>. It is recommended to upgrade to the most <a href="https://github.com/aces/Loris/releases" class="underline" target="_blank">recent LORIS release</a> - see the Updating your LORIS page of <a href="https://github.com/aces/Loris/wiki/Setup" class="underline" target="_blank">the wiki</a> for more details. </p>
+
+            <strong id="five">4. How to get LORIS?</strong>
+            <p>The latest build of LORIS can be downloaded on <a href="https://github.com/aces/LORIS" class="underline" target="_blank">Github</a> - see our <a href="getstarted.html#four" class="underline">Getting Started</a> page of this website.</p>
+
+            <strong id="six"> 5. How is LORIS licensed? </strong>
+            <p>LORIS is open source software. It is released under the GPLv3 license.</p>
+
+            <strong id="seven">6. How can I import behavioral data from other databases into LORIS?</strong>
+            <p>LORIS can import data via CSV uploaders, as well as linking to other data repositories via custom pipelines - see <a href="" class="underline" target="_blank">the wiki</a> for more information.</p>
+
+            <strong id="eight">7. How easily can I export data from LORIS to other software for analysis?</strong>
+            <p>Quite easily! Data can be queried and exported via the Data Querying Tool, which can then be sent to other data processing and analysis pipelines.</p>
+
+            <strong id="nine">8. How can I import imaging data into LORIS?</strong>
+            <p>The instructions to setup the Imaging Database can be found on the Imaging Database page of <a  href="https://github.com/aces/Loris/wiki/Imaging-Database" class="underline" target="_blank">the wiki</a>.</p>
+
+            <strong id="ten">9. Can I import MRI data from a scanner to LORIS?</strong>
+            <p>Data can be automatically transferred from a scanner and loaded into LORIS by creating custom scripts that will feed into LORIS’ imaging insertion pipeline.</p>
+
+            <strong id="eleven">10. Can LORIS import any DICOM file or only neuroimaging data?</strong>
+            <p>By default, LORIS is designed for DICOM MRI data collected by a longitudinally-organized multi-site study with a defined data acquisition protocol. With modifications, it can handle any modality of imaging data.</p>
+            
+            <!--<strong id="eleven">10. What imaging data formats can LORIS handle?</strong>
+            <p>LORIS is designed to house MINC, NIfTi, MEG, FreeSurfer, and processed input data, and can be customized for other modalities via fully configurable pipeline and visualization tools. Raw DICOMs are the foundation of the core visualization utilities. Conversion to formats such as MINC and NIfTI can be easily embedded in LORIS data handling pipelines.</p>-->
+
+            <strong id="twelve">11. Can I have custom scoring for clinical/neuropsychological measures?</strong>
+            <p>Yes. Custom scoring can be implemented for behavioural instruments in a variety of languages including PHP, Python or Matlab. PHP is the most well supported language.</p>
+
+            <strong id="thirteen"> 12. How much coding is required for implementing clinical/neuropsychological instruments?</strong>
+            <p>LORIS’ Instrument Builder Module enables non-technical staff to create many simple forms. Scoring and field dependencies can be implemented in a wide variety of scripting languages See the <a href="https://github.com/aces/Loris/wiki/Behavioural-Database" class="underline" target="_blank">the wiki</a> for more information. </p>
+
+            <strong id="fourteen">13. What is a LORIS Instrument?</strong>
+            <p>A LORIS instrument or instrument form is a behavioural, psychological, or clinical test or questionnaire that is administered to collect data on participants in a given study and is stored in the Behavioural Database. Instrument forms fall into three categories: basic forms, forms with scoring algorithms, and uploaded data. See <a href="https://github.com/aces/Loris/wiki/Behavioural-Database" class="underline" target="_blank">the wiki</a> for more information.</p>
+
+            <strong id="fifteen">14. How can I add copyrighted questionnaires to LORIS?</strong>
+            <p>Copyrighted questionnaires are often used in LORIS. Stipulations made by the publisher are very similar to those made when using copyrighted paper forms. These include limiting the number of forms available, affixing the copyright notice to the screen of instrument presentation, obtaining a letter of permission from the publisher, and having the publisher approve the online form before going live.</p>
+
+            <strong id="sixteen">15. Can I collect survey data using the LORIS interface?</strong>
+            <p>Absolutely! The Survey Module in LORIS implements survey questionnaire dissemination and survey data recording. This module allows survey distribution via a secured link sent via email.</p>
+
+            <strong id="seventeen">16. How fast can LORIS query and extract data for download from large datasets?</strong>
+            <p>LORIS’ CouchDB-based Data Querying Tool outperforms traditional MySQL-based cached retrieval by a factor of 4 for data querying and extraction. (Based on a medium-sized study with 7500 instrument datasets.) (D. MacFarlane, 2014) <a href="images/LORIS-poster-enhanced-query.pdf" target="_blank" class="underline">[see poster]</a>.</p>
+
+            <strong id="eighteen">17. How is data validated in LORIS?</strong>
+            <p>LORIS has many quality control features enabling study staff to review, flag, and track data quality at every level. Additional features in the Statistics Module provide at-a-glance outlier identification - see our <a href="features.html#quality-control" class="underline">Quality Control</a> section of the Features page.</p>
+
+            <strong id="nineteen">18. What is a LORIS Module?</strong>
+            <p>A LORIS Module is a customizable component with a specific functionality that can be easily added or removed to accommodate a variety of study requirements. For example, the Candidate Information Module contains all information regarding overall candidate, proband, and participant status. Modules can be accessed through the menu tabs at the top of each LORIS webpage. See <a href="https://github.com/aces/Loris/wiki/LORIS-Modules" class="underline" target="_blank">the wiki</a> for more information. </p>
+
+            <!--<strong>19. Where can I find previously coded LORIS instruments?</strong>
+            <p>A LORIS Module is a customizable component with a specific functionality that can be easily added or removed to accommodate a variety of study requirements. For example, the Candidate Information Module contains all information regarding overall candidate, proband, and participant status. Modules can be accessed through the menu tabs at the top of each LORIS webpage. See <a href="https://github.com/aces/Loris/wiki/LORIS-Modules" class="underline" target="_blank">the wiki</a> for more information.</p>-->
+
+          </div>
+        </div>
+      <div class="clear"></div>
+    </section>
+
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Wiki</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <h3>Partners </h3>
+      <div class="clear"></div>
+      <a href="https://www.mcgill.ca/" target="_blank"><img src="images/logo-mcgill.png" alt="McGill Logo"></a>
+      <a href="http://www.mcgill.ca/neuro/" target="_blank"><img src="images/logo-neuro.png" alt="Neuro Logo"></a>
+      <a href="http://mcin-cnim.ca/" target="_blank"><img src="images/logo-mcin.png" alt="MCIN Logo"></a>
+      <a href="http://ludmercentre.ca/" target="_blank"><img src="images/logo-ludmer.png" alt="Ludmer Centre Logo"></a>
+    </footer>
+
+    <a href="#to-top" class="ease"><div class="top-button">TOP</div></a>
+
+<!-- slicknav script, nav animation, div height scripts -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#menu').slicknav({label:''});
+  });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('#top').addClass("mini");
+    }
+    else{
+        $('#top').removeClass("mini");
+    }
+  });
+
+  $(function() {
+    $('.divheight').matchHeight({
+    byRow: true,
+    property: 'height',
+    target: null,
+    remove: false
+    });
+  });
+</script>
+ </body>
+ <html>

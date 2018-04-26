@@ -1,120 +1,218 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>LORIS</title>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LORIS | Get Started</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Steps to download and install LORIS">
+  <meta name="author" content="Derek Lo 2015">
 
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/loris.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400italic,100,300,400,500' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css">
+<![endif]-->
+<link rel="stylesheet" href="css/slicknav.css">
+<link href="css/common_styles.css" rel="stylesheet" type="text/css">
+<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.slicknav.js"></script>
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+<!-- script to match div heights https://github.com/liabru/jquery-match-height-->
+<script src="js/jquery.matchHeight-min.js" type="text/javascript"></script> 
 
-    </head>
-    <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img style="max-width:100px;" alt="Brand" src="img/logo/loris3_white.svg"> 
-                    </a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="features.html">Features</a></li>
-                        <li class="active"><a href="getstarted.html">Get Started</a></li>
-                        <li><a href="support.html">Support</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div><!--/.navbar-collapse -->
-            </div>
-        </nav>
 
-        <div class="container">
-            <div class="title">
-                <h1>Get Started</h1>
-                <p class="lead">It's easy to get started with LORIS. Have a look at our <a href="https://github.com/aces/Loris">Github page</a> for detailed instructions.</p>
-            </div>
+<!-- jquery easing, nav animation, div height scripts-->
 
-            <div>
-                <h3>1. Get the code</h3>
-                <p class="lead">Download the LORIS code from our <a href="https://github.com/aces/Loris/releases">GitHub Release page</a>. We recommend using the latest release.</p>
-            </div>
-            <div>
-                <h3>2. Install</h3>
-                <p class="lead">Follow the install guide for your operating system:</p>
-                <ul>
-                    <li><a class="lead" href="https://github.com/aces/Loris/blob/master/README.md">Linux</a></li>
-                    <li><a class="lead" href="https://github.com/aces/Loris/blob/master/INSTALL.Mac.md">Mac</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>3. Configure</h3>
-                <p class="lead">Follow our <a href="https://github.com/aces/Loris/wiki/Setup">configuration guide</a> to set up LORIS for your project.</p>
-            </div>
-            <!--
-            <div class="row">
-                <div class="col-md-8">
-                    <h3>1. Clone the LORIS repository</h3>
-                    <p>LORIS is open source and our code is stored on <a href="https://github.com/aces/Loris">GitHub</a>. The first step to getting LORIS is to clone, or fork (if are considering contributing code) the codebase.</p>
-                    <pre>git clone https://github.com/aces/Loris.git</pre>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <h3>2. Checkout the latest tagged version</h3>
-                    <p>We strongly recommend using the latest tagged version of the code, as it has gone through a rigourous testing procedure. You can do this by listing the tags on the repository and checking out the newest tag.</p>
-                    <pre>git tag -l<br>git checkout tags/&lt;tag-name&gt;</pre>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <h3>3. Install LORIS</h3>
-                    Run the install script from the tools directory.
-                    <pre>cd tools<br>./install.sh<br>sudo service apache2 reload</pre>
-                    <p>If you are installing on a Mac, please see our <a href="https://github.com/aces/Loris/blob/master/INSTALL.Mac.md">Mac installation guide</a>.
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <h3>4. Configure</h3>
-                    <p>Once you have installed LORIS, it can be configured and customized to your liking. Have a look at the <a href="#">Setup</a> portion of our documentation for more information.
-                </div>
-            </div>
-            -->
+<script>
+$( document ).ready( function() {
+  $('a.ease').bind('click',function(event){
+    var $anchor = $(this);
+
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1250,'easeInOutExpo');
+    event.preventDefault();
+  });
+});
+</script>
+
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="top">
+      <div class="logodiv">
+        <img src="images/LORIS-logo-color.png" alt=""/>
+      </div>
+      <nav>
+        <ul id="main-nav">
+          <li><a href="index.html" class="first">Home</a></li>
+          <li><a href="features.html" class="">Features</a></li>
+          <li><a href="getstarted.html" class="active">Get Started</a></li>
+          <li><a href="faq.html" class="">FAQ</a></li>
+          <li><a href="about.html" class="">About LORIS</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+
+        <!-- slicknav -->
+        <div id="menu">
+            <ul>
+              <li><a href="index.html" class="menu-fx">Home</a></li>
+              <li><a href="features.html" class="menu-fx">Features</a></li>
+              <li><a href="getstarted.html" class="menu-fx active">Get Started</a></li>
+              <li><a href="faq.html" class="menu-fx">FAQ</a></li>
+              <li><a href="about.html" class="menu-fx">About LORIS</a></li>
+              <li><a href="contact.html" class="menu-fx">Contact</a></li>
+            </ul>
         </div>
+      </nav>
+    </header>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="col-md-8">
-                    <ul class="footer-links">
-                        <li><a href="https://github.com/aces/Loris">GitHub</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 footer-logo">
-                    <a href="http://mcin-cnim.ca/"><img src="img/logo/logo2.png" class="img-responsive pull-right grayscale"></a>
-                </div>
+    <section id="to-top">
+      <div class="parallax-five">
+        <div class="content">
+          <h1 class="center">Let's Get Started</h1>
+          <div class="three-column">
+            <div class="clear-content center ">
+              <a href="#one" class="ease"><i class="fa fa-cloud-download big text ro"></i>
+              <h2 class="center">1. Download</h2>
+              <p>Get the LORIS codebase from GitHub.</p></a>
             </div>
-        </footer>
+          </div>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>
+          <div class="three-column">
+            <div class="clear-content center ">
+              <a href="#two" class="ease"><i class="fa fa-laptop big text ro"></i>
+              <h2 class="center">2. Install</h2>
+              <p>Follow our Install steps for your Linux-based system.</p></a>
+            </div>
+          </div>  
+
+          <div class="three-column">
+            <div class="clear-content center ">
+              <a href="#three" class="ease"><i class="fa fa-wrench big text ro"></i>
+              <h2 class="center">3. Configure</h2>
+              <p>Set up LORIS for your data requirements.</p></a>
+            </div>
+          </div> 
+          <div class="clear"></div> 
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="one">
+        <div class="teal block">
+          <!--<h1 class="center"> Get Started</h1>-->
+          <i class="fa fa-cloud-download big center"></i>
+          <h2 class="center"> 1. Download </h2>
+          <div class="feature-p">
+            <p class="center"> Download the <a href="https://github.com/aces/Loris/releases" class="underline" target="_blank">latest release</a> from our GitHub repository. LORIS is <em>OPEN SOURCE</em>, and supported for Ubuntu (14.04) and CentOS (6.5).</p>
+            <p class="center">For more information on system requirements and dependencies, read more in our <a fref="https://github.com/aces/Loris/wiki/Install-Script" class="underline" target="_blank">GitHub wiki</a></p>
+            <h2 class="center"><a href="https://github.com/aces/LORIS" target="_blank"><i class="fa fa-download"></i> Download</a></h2>
+            <!--
+            <div class="requirements">
+              <h3 class ="center">Linux Requirements </h3>
+              <ul>
+                <li>LINUX (supported on Ubuntu 14.04 and CentOS 6.5) or Mac OS X (tested for Mavericks - OS X 10.9)</li>
+                <li>Apache2 (libapache2-mod-php5)</li>
+                <li>MySQL (libmysqlclient15-dev mysql-client mysql-server)</li>
+                <li>PHP/PEAR 5.3+ (php5 php-pear php5-mysql php5-gd)</li>
+                <li>php5-json (for Debian/Ubuntu distributions)</li>
+                <li>Smarty 3</li>
+                <li>Package manager (for LINUX distributions)</li>
+                <li>Composer</li>
+              </ul>
+              <h2 class="center"><a href="https://github.com/aces/LORIS" target="_blank"><i class="fa fa-download"></i> Download</a></h2>
+            </div>-->
+          <div class="clear"></div>
+    </section>
+
+    <section id="two">
+      <div class="block grey">
+        <i class="fa fa-laptop big center"></i>
+        <h2 class="center"> 2. Install </h2>
+        
+        <div class="feature-p center">
+          <p>Follow our <a href="https://github.com/aces/Loris/wiki/Install-Script" class="underline" target="_blank">GitHub Wiki</a> to install LORIS in a few quick steps. Loris includes a Readme for both Ubuntu and CentOS installation. <a href="https://github.com/aces/Loris/wiki/Install-Script" class="underline" target="_blank"> [read more]</a></p> 
+        </div>
+      <div class="clear"></div>
+    </section>
+
+    <section id="three">
+      <div class="block ">
+        <i class="fa fa-wrench big text center"></i>
+        <h2 class="center"> 3. Configure </h2>
+        <div class="feature-p center">
+          <p>To complete the setup of your LORIS installation, follow the <a href="https://github.com/aces/Loris/wiki/Setup" class="underline" target="_blank">Setup guide in our GitHub Wiki</a> to step through the process of defining Loris’ many options for your dataset and data collection environment.</p>
+          <p>Configure your subject identifiers, study sites, and clinical cohort groups, projects and subprojects, and many more study variables using LORIS’ Configuration module.</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+    <section id="four">
+      <div class="block blue">
+        <i class="fa fa-level-up big center"></i>
+        <h2 class="center"> 4. Updating </h2>
+        <div class="feature-p center">
+          <!--<h3 class=""> How To Update </h3>-->
+          <p class="">To update your LORIS to a new release, follow our <a href="https://github.com/aces/Loris/wiki/Setup#updating-your-loris" class="underline" target="_blank">Wiki documentation</a> and note special release notes for existing projects on our <a href="https://github.com/aces/Loris/releases" class="underline" target="_blank">releases page.</a> </p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Wiki</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <h3>Partners </h3>
+      <div class="clear"></div>
+      <a href="https://www.mcgill.ca/" target="_blank"><img src="images/logo-mcgill.png" alt="McGill Logo"></a>
+      <a href="http://www.mcgill.ca/neuro/" target="_blank"><img src="images/logo-neuro.png" alt="Neuro Logo"></a>
+      <a href="http://mcin-cnim.ca/" target="_blank"><img src="images/logo-mcin.png" alt="MCIN Logo"></a>
+      <a href="http://ludmercentre.ca/" target="_blank"><img src="images/logo-ludmer.png" alt="Ludmer Centre Logo"></a>
+    </footer>
+
+    <a href="#to-top" class="ease"><div class="top-button">TOP</div></a>
+
+<!-- slicknav script, nav animation, div height scripts -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#menu').slicknav({label:''});
+  });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('#top').addClass("mini");
+    }
+    else{
+        $('#top').removeClass("mini");
+    }
+  });
+
+  $(function() {
+    $('.divheight').matchHeight({
+    byRow: true,
+    property: 'height',
+    target: null,
+    remove: false
+    });
+  });
+</script>
+ </body>
+ <html>
