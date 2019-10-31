@@ -696,10 +696,19 @@ nav ul li.first {
 	margin-bottom: .5em;
 	opacity: .6;
 }
-.credits-text h3 {
+.credits-box h3 {
 	margin-bottom: 0.5em;
 	padding: 0 10px;
 	text-shadow: 0px 0px 8px rgba(0, 0, 0, .95);	
+}
+.credits-extra {
+	display: block;
+	width: auto;
+	height: auto;
+	float: left;
+	position: relative;
+	color: #fff;
+	padding: 10px;
 }
 .maxvid {
 	max-height: 1024px;
