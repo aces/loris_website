@@ -659,6 +659,12 @@ nav ul li.first {
 	width: 100%;
 	overflow: auto;
 }
+@media screen and (min-width: 1200px) {
+	.credits-holder {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
 .credits h1 {
 	display: block;
 	width: 100%;
@@ -703,12 +709,17 @@ nav ul li.first {
 }
 .credits-extra {
 	display: block;
-	width: auto;
+	width: 100%;
 	height: auto;
 	float: left;
 	position: relative;
 	color: #fff;
 	padding: 10px;
+	text-align: center;
+}
+.credits-extra h3{
+	display: inline-block;
+	margin: 15px 30px;
 }
 .maxvid {
 	max-height: 1024px;

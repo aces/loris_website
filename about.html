@@ -37,15 +37,11 @@ $( document ).ready( function() {
 
     $('html, body').stop().animate({
       scrollTop: $($anchor.attr('href')).offset().top
-    }, 1500,'easeInOutExpo');
+    }, 1250,'easeInOutExpo');
     event.preventDefault();
   });
 });
-
-
 </script>
-
-
 
 </head>
 
@@ -80,7 +76,7 @@ $( document ).ready( function() {
     </header>
 
     <section>
-      <div class="parallax-seven">
+      <div id="to-top" class="parallax-seven">
         <div class="content">
           <h1 class="center">The History of LORIS</h1>
           <p><span class="dropcap">LORIS</span> was originally developed for the NIH MRI Study of Normal Brain Development (NIHPD; Evans and Brain Development Cooperative Group, 2006), which was funded in 1999. LORIS was designed from inception to facilitate active multi-site study management and centralized archiving and retrieval of multi-modal data. </p>
@@ -93,8 +89,9 @@ $( document ).ready( function() {
       </div>
     </section>
 
+<!-- a direct link can be given to about.html#key-publications -->
     <section>
-      <div class="block blue">
+      <div id="key-publications"class="block blue">
         <h1 class="center bottom-margin">Key Publications and References</h1>
         <div class="posterholder">
           <div class="postermedium">
@@ -160,7 +157,7 @@ $( document ).ready( function() {
     </section> 
 
     <section id="credits">
-      <div class="credits">
+      <div id="loris-team" class="credits">
         <h1 class=""> LORIS Team </h1>
         <div class="credits-holder">
           <div class="credits-box">
@@ -256,12 +253,19 @@ $( document ).ready( function() {
             <div class="credits-text"><h3>Y. (Corey) Chen</h3></div>
           </div>
           <div class="credits-extra">
-            <h3>Mélanie Legault, Alizée Wickenheiser, Yang, Santiago</h3>
+            <h3>Mélanie Legault</h3> 
+            <h3>Alizée Wickenheiser</h3>
+            <h3>Santiago Torres</h3>
+            <h3>Derek Lo</h3>
           </div>
         </div>
       </div>
-      
     </section>
+
+    <section class="past-collaborators">
+      <!-- content will go here   -->
+    </section>
+
 
     <footer>
       <ul class="footer-nav">
