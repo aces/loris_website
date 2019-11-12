@@ -774,6 +774,7 @@ nav ul li.first {
 	display: block;
 	text-align: center;
 	margin: 1em;
+	color: #fff;
 
 }
 .postertext h2, .postertext h3, .postertext p {
@@ -814,6 +815,18 @@ nav ul li.first {
 	margin: 0 auto;
 	display: block;
 }
+.poster-card {
+    width: 33%;
+    max-width: 200px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    overflow: auto;
+    padding: 10px;
+}
+.poster-card img {
+	width: 100%;
+}
+
 /* Section - form styles */
 /**************************/
 /*section for the form styles*/
@@ -1229,14 +1242,15 @@ div.accordian li {
   background-color: #fff;
   padding: 1rem;
   margin: 0;
-  /*border: 1px solid #ddd;*/
   transition: all .25s ease;
   line-height: 1.75rem;
   overflow: auto;
+  color: #343434;
+  border: 1px solid #fff;
 }
 .accordian .title:hover {
-  background-color: #8B8B8B;
-  /*background-color: #DC2627;*/
+  background-color: #f47c20;
+  border: 1px solid #f47c20;
 }
 .accordian ul p {
   display: none;
@@ -1251,16 +1265,19 @@ div.accordian li {
 	display: none;
 	padding: 30px;
 	margin: 0 !important;
+	overflow: auto;
+    border: 1px solid #fff;
 }
 .accordian ul ul li:last-child a {
   border-bottom: 0;
 }
-.fa {
+.accordian .fa {
   transition: all .25s ease;
   float: right;
   color: #2C8EB3;
   font-size: 1.75rem;
   pointer-events: none;
+  margin: 0;
 }
 .accordian h3 {
   cursor: pointer;
