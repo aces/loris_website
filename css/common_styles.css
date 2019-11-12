@@ -770,19 +770,15 @@ nav ul li.first {
 	width: 48%;
 	position: relative;
 }
-.postertext {
+.postertext, a.postertext {
 	display: block;
 	text-align: center;
-	margin: 1em;
-	color: #fff;
+	margin: 1em 0;
+	color: #343434;
 
 }
 .postertext h2, .postertext h3, .postertext p {
 	/*text-shadow: 0px 0px 4px rgba(0, 0, 0, .95);*/
-}
-.postertext p{
-	color: #f47c20;
-	font-weight: 400;
 }
 .posterbig a p, .postersmall a p {
 	-webkit-transition-duration: .25s;
@@ -810,21 +806,26 @@ nav ul li.first {
     filter: contrast(90%) hsaturate(100%);
 }
 .posterholder {
-	width: 80%;
+	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
 }
 .poster-card {
-    width: 33%;
-    max-width: 200px;
+    width: 200px;
     border: 1px solid #fff;
     border-radius: 10px;
     overflow: auto;
     padding: 10px;
+    background: #fff;
+    margin: 20px;
 }
 .poster-card img {
 	width: 100%;
+	/*border: 1px solid #dadada;*/
 }
 
 /* Section - form styles */
@@ -1266,7 +1267,7 @@ div.accordian li {
 	padding: 30px;
 	margin: 0 !important;
 	overflow: auto;
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
 }
 .accordian ul ul li:last-child a {
   border-bottom: 0;
@@ -1281,4 +1282,10 @@ div.accordian li {
 }
 .accordian h3 {
   cursor: pointer;
+  color: #343434;
+  font-size: 1em !important;
+}
+.accordian h4 {
+	font-size: 1em;
+	font-weight: 400;
 }
