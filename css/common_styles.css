@@ -74,8 +74,6 @@ h1, h2, h3, h4, h5 {
 	font-size: 1.125em;
 	font-weight: 500;
 	text-transform: uppercase;
-	max-width: 1024px;
-	margin: 0 auto;
 }
 #wrapper p {
 	font-size: 1em;
@@ -1240,6 +1238,8 @@ div.accordian li {
 .accordian {
   width: 100%;
   color: #b5b5b5;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 .accordian .title {
   background-color: #fff;
@@ -1269,7 +1269,7 @@ div.accordian li {
 	padding: 30px;
 	margin: 0 !important;
 	overflow: auto;
-    /*border: 1px solid #fff;*/
+    background: rgba(255,255,255,0.25);
 }
 .accordian ul ul li:last-child a {
   border-bottom: 0;
