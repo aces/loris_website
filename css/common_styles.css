@@ -673,6 +673,13 @@ nav ul li.first {
 	color: #fff;
 	font-size: 2.5em !important;
 }
+.credits h2 {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 2em !important;
+}
 .credits-box {
 	display: block;
 	width: 20%;
@@ -720,6 +727,9 @@ nav ul li.first {
 .credits-extra h3{
 	display: inline-block;
 	margin: 15px 30px;
+}
+.extra-bottom {
+	padding-bottom: 100px;
 }
 .maxvid {
 	max-height: 1024px;
