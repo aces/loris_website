@@ -1035,11 +1035,11 @@ footer img:hover {
 	}
 }
 
-@media screen and (max-width: 1070px)  {
+/*@media screen and (max-width: 1070px)  {
 	.credits h2 {
 		font-size: 1.1em !important;
 	}
-	}
+}*/
 
 	@media screen and (max-width: 959px)  {
 	.holder-half {
