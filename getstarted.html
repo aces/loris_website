@@ -191,28 +191,28 @@ $( document ).ready( function() {
 
 <!-- slicknav script, nav animation, div height scripts -->
 
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('#menu').slicknav({label:''});
-  });
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#menu').slicknav({label:''});
+      });
 
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 1){  
-        $('#top').addClass("mini");
-    }
-    else{
-        $('#top').removeClass("mini");
-    }
-  });
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){  
+            $('#top').addClass("mini");
+        }
+        else{
+            $('#top').removeClass("mini");
+        }
+      });
 
-  $(function() {
-    $('.divheight').matchHeight({
-    byRow: true,
-    property: 'height',
-    target: null,
-    remove: false
-    });
-  });
-</script>
- </body>
- <html>
+      $(function() {
+        $('.divheight').matchHeight({
+        byRow: true,
+        property: 'height',
+        target: null,
+        remove: false
+        });
+      });
+    </script>
+  </body>
+<html>
