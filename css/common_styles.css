@@ -1301,3 +1301,18 @@ div.accordian li {
 	font-size: 1em;
 	font-weight: 400;
 }
+
+/* sponsors */
+.logo-wall {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+.logo-wall a img {
+	height: 75px;
+	width: auto;
+	padding: 10px 20px;
+	margin: 10px 20px;
+	background: #fff;
+	border-radius: 20px;
+}
