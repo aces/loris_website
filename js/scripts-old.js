@@ -266,10 +266,10 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://www.mcgill.ca/neuro/files/neuro/moriarty_logo.png" class="logo">'+
+      '<img src="http://www.mcgill.ca/neuro/files/neuro/neurotext_final_0.gif" class="logo">'+
       '<h1>The Neuro</h1>'+
       '<p><b>The Neuro</b> is located in Montreal Canada and is the development center for LORIS.</p>'+
-      '<p>Website: <a href="http://mcin.ca" target="blank">mcin.ca</a></p>'+
+      '<p>Website: <a href="http://mcin-cnim.ca" target="blank">mcin-cnim.ca</a></p>'+
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(45.5089835, -73.5813425),
@@ -311,7 +311,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      // '<img src="http://www.cima-q.ca/ressources/images/logocimaq.png" class="logo">'+
+      '<img src="http://www.cima-q.ca/ressources/images/logocimaq.png" class="logo">'+
       '<h1>CIMA-Q</h1>'+
       "<p><b>Consortium pour l'Identification précoce de la Maladie d'Alzheimer (CMA-Q)</b> regroupe plus de 90 chercheurs et cliniciens québécois qui ont comme objectif commun de faire avancer les connaissances sur la maladie d'Alzheimer. </p>"+
       '<p>Website: <a href="http://www.cima-q.ca/" target="blank">www.cima-q.ca</a></p>'+
@@ -326,7 +326,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://rpq-qpn.ca/wp-content/uploads/2021/08/Logo-Quebec-Parkinson-Network-scaled-e1628013005302.jpg" class="logo">'+
+      '<img src="http://rpq-qpn.ca/en/wp-content/uploads/2014/05/Logo-Quebec-Parkinson-Network.png" class="logo">'+
       '<h1>Quebec Parkinson Network</h1>'+
       "<p><b>Quebec Parkinson Network</b> allows researchers, clinicians and patients to regroup. Promoting collaboration of different actors in the fight against Parkinson's disease, the Network wants to be the new leader of the research on the disease.</p>"+
       '<p>Website: <a href="http://rpq-qpn.ca/en/" target="blank">rpq-qpn.ca</a></p>'+
@@ -341,7 +341,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://www.fz-juelich.de/static/media/Logo.2ceb35fc.svg" class="logo">'+
+      '<img src="http://www.fz-juelich.de/SiteGlobals/StyleBundles/Bilder/NeuesLayout/logo.gif;jsessionid=2A49E35ECA31A04A76B23FC867C83FE2?__blob=normal" class="logo">'+
       '<h1>BigBrain Project</h1>'+
       '<p><b>The BigBrain Project</b> is a 3D model of a human brain in extremely high resolution. This reconstruction is a free tool, and offers matchless neuroanatomical insight as well as the possibility to verify hypotheses.</p>'+
       '<p>Website: <a href="http://www.fz-juelich.de/inm/inm-1/EN/Forschung/_docs/BigBrain/bigbrain_node.html" target="blank">http://www.fz-juelich.de/</a></p>'+
@@ -349,29 +349,14 @@ var contentString =
 makeMarker({
   position: new google.maps.LatLng(50.922477, 6.361087),
   title: "BigBrain Project",
-  sidebarItem: "BigBrain Project Julich",
+  sidebarItem: "BigBrain Project",
   content: contentString,
   icon: image
 }); 
 
 var contentString = 
       '<div>'+
-      '<img src="https://bigbrainproject.org/images/backgrounds/background-1200.png" class="logo">'+
-      '<h1>The Neuro</h1>'+
-      '<p><b>The Neuro</b> is located in Montreal Canada and is the development center for LORIS.</p>'+
-      '<p>Website: <a href="https://bigbrainproject.org/" target="blank">bigbrainproject.org</a></p>'+
-      '</div>';
-makeMarker({
-  position: new google.maps.LatLng(45.5089835, -73.5813425),
-  title: "BigBrain Project",
-  sidebarItem: "BigBrain Project Montreal",
-  content: contentString,
-  icon: image
-}); 
-
-var contentString = 
-      '<div>'+
-      '<img src="https://www.sickkids.ca/contentassets/232e33f4208c495eb192e035ee7ba6e5/sickkids-logo-desktop-140x42.png" class="logo">'+
+      '<img src="http://www.sickkids.ca/resources/hospital/images/logos/sickkids.gif" class="logo">'+
       '<h1>Sick Kids Hospital</h1>'+
       '<p><b>Sick Kids</b> is located in Toronto Canada.</p>'+
       '<p>Website: <a href="http://www.sickkids.ca/" target="blank">www.sickkids.ca</a></p>'+
@@ -401,7 +386,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://www.neurodevnet.ca/wp-content/uploads/2021/12/cropped-Children-Neurodevelopmental-Disorders-Network.png" class="logo">'+
+      '<img src="http://www.neurodevnet.ca/sites/all/themes/NeuroDevNet2010/images/neurodevnet-logo.jpg" class="logo">'+
       '<h1>NeuroDevNet</h1>'+
       '<p><b>NeuroDevNet</b>, a Canadian Network of Centres of Excellence (NCE), is dedicated to understanding brain development and to helping children and their families overcome the challenges of neurodevelopmental disorders.</p>'+
       '<p>Website: <a href="http://www.neurodevnet.ca/" target="blank">www.neurodevnet.ca</a></p>'+
@@ -431,10 +416,10 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://i0.wp.com/ibis-network.com/wp-content/uploads/2020/08/cropped-fdb33-ibis-bl-1080x1080-copy-1.png?fit=814%2C1080&ssl=1" class="logo">'+
+      '<img src="http://www.ibis-network.org/Images/TitleBarNavigateSM-ACE.gif" class="logo">'+
       '<h1>IBIS Seattle</h1>'+
       '<p><b>Infant Brain Imaging Study (IBIS)</b> is a project to increase our understanding of the timing and pattern of brain development in very young children with autism. </p>'+
-      '<p>Website: <a href="https://ibis-network.com/" target="blank">ibis-network.com</a></p>'+
+      '<p>Website: <a href="http://www.ibis-network.org/" target="blank">ibis-network.org</a></p>'+
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(47.599949, -122.339345),
@@ -446,10 +431,10 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://i0.wp.com/ibis-network.com/wp-content/uploads/2020/08/cropped-fdb33-ibis-bl-1080x1080-copy-1.png?fit=814%2C1080&ssl=1" class="logo">'+
+      '<img src="http://www.ibis-network.org/Images/TitleBarNavigateSM-ACE.gif" class="logo">'+
       '<h1>IBIS St Louis</h1>'+
       '<p><b>Infant Brain Imaging Study (IBIS)</b> is a project to increase our understanding of the timing and pattern of brain development in very young children with autism. </p>'+
-      '<p>Website: <a href="https://ibis-network.com/" target="blank">ibis-network.com</a></p>'+
+      '<p>Website: <a href="http://www.ibis-network.org/" target="blank">ibis-network.org</a></p>'+
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(38.621167, -90.192309),
@@ -461,10 +446,10 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://i0.wp.com/ibis-network.com/wp-content/uploads/2020/08/cropped-fdb33-ibis-bl-1080x1080-copy-1.png?fit=814%2C1080&ssl=1" class="logo">'+
+      '<img src="http://www.ibis-network.org/Images/TitleBarNavigateSM-ACE.gif" class="logo">'+
       '<h1>IBIS North Carolina</h1>'+
       '<p><b>Infant Brain Imaging Study (IBIS)</b> is a project to increase our understanding of the timing and pattern of brain development in very young children with autism. </p>'+
-      '<p>Website: <a href="https://ibis-network.com/" target="blank">ibis-network.com</a></p>'+
+      '<p>Website: <a href="http://www.ibis-network.org/" target="blank">ibis-network.org</a></p>'+
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(35.230349, -80.834388),
@@ -476,10 +461,10 @@ makeMarker({
    
 var contentString = 
       '<div>'+
-      '<img src="https://www.nih.gov/sites/all/themes/nih/images/nih-logo-color.png" class="logo">'+
+      '<img src="http://pediatricmri.nih.gov/nihpd/info/Images/sub_pages_logo.jpg" class="logo">'+
       '<h1>NIH Paediatric Database</h1>'+
       '<p><b>NIH</b> MRI Study of Normal Pediatric Development.</p>'+
-      '<p>Website: <a href="https://www.nih.gov/" target="blank">www.nih.gov</a></p>'+
+      '<p>Website: <a href="http://pediatricmri.nih.gov" target="blank">pediatricmri.nih.gov</a></p>'+
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(39.291661, -105.760953),
@@ -491,7 +476,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://sos-ch-dk-2.exo.io/public-website-production-2022/img/HBP_logo_Color.png" class="logo">'+
+      '<img src="https://www.humanbrainproject.eu/image/company_logo?img_id=10795&t=1441492532899" class="logo">'+
       '<h1>Human Brain Project</h1>'+
       '<p><b>Human Brain Project</b> is part of the European Commission and is centered in Geneva Switzerland.</p>'+
       '<p>Website: <a href="https://www.humanbrainproject.eu/" target="blank">humanbrainproject.eu</a></p>'+
@@ -521,10 +506,10 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      // '<img src="http://en.kisti.re.kr/media/tpl/common/logo-kisti.jpg" class="logo">'+
+      '<img src="http://en.kisti.re.kr/media/tpl/common/logo-kisti.jpg" class="logo">'+
       '<h1>Korean Institute of Science and Technology</h1>'+
       '<p><b>Korean Institute of Science and Technology</b> is located in Seoul Korea.</p>'+
-      '<p>Website: <a href="hhttps://kisti.re.kr/" target="blank">kisti.re.kr</a></p>'+
+      '<p>Website: <a href="http://en.kisti.re.kr/" target="blank">en.kisti.re.kr</a></p>'+
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(37.591091, 127.045123),
@@ -536,7 +521,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      // '<img src="http://www.nbrc.ac.in/picgal/logo/logonew_02.png" class="logo">'+
+      '<img src="http://www.nbrc.ac.in/picgal/logo/logonew_02.png" class="logo">'+
       '<h1>National Brain Research Centre</h1>'+
       '<p><b>National Brain Research Centre</b> is the only institute in India dedicated to neuroscience research and education. Scientists and students of NBRC come from diverse academic backgrounds, including biological, computational, mathematical, physical, engineering and medical sciences, and use multidisciplinary approaches to understand the brain. </p>'+
       '<p>Website: <a href="http://www.nbrc.ac.in/" target="blank">www.nbrc.ac.in</a></p>'+
@@ -551,7 +536,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      // '<img src="http://www.eur.nl/fileadmin/templates/fabrique/img/logo.png" class="logo">'+
+      '<img src="http://www.eur.nl/fileadmin/templates/fabrique/img/logo.png" class="logo">'+
       '<h1>Erasmus University</h1>'+
       '<p><b>Erasmus University</b> is located in Rotterdam Netherlads</p>'+
       '<p>Website: <a href="http://www.eur.nl/" target="blank">www.eur.nl</a></p>'+
@@ -566,10 +551,10 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://sicsapps.com/dmp/static/base/images/home_bg2.png" class="logo">'+
+      '<img src="http://www.bioeng.nus.edu.sg/cfa/images/nuslogo.png" class="logo">'+
       '<h1>National University of Singapore: GUSTO</h1>'+
       "<p><b>The GUSTO project</b> focuses on the relation between fetal development and the risks for obesity and metabolic dysfunction as well as psychopathology. GUSTO involves a partnership of two academic research centers, National University of Singapore (NUS) and Singapore Institute for Clinical Sciences (SICS) with two child health centers; National University Hospital (NUH) and Kandang Kerbau Women's and Children's Hospital (KKH). </p>"+
-      '<p>Website: <a href="https://gustodatavault.sg/" target="blank">gustodatavault.sg</a></p>'+
+      '<p>Website: <a href="http://www.bioeng.nus.edu.sg/cfa/gusto.html" target="blank">www.bioeng.nus.edu.sg</a></p>'+
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(1.296578, 103.776297),
@@ -596,10 +581,10 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://www.fz-juelich.de/static/media/Logo.2ceb35fc.svg" class="logo">'+
+      '<img src="http://www.fz-juelich.de/SiteGlobals/StyleBundles/Bilder/NeuesLayout/logo.gif?__blob=normal" class="logo">'+
       '<h1>1000 Gehirne</h1>'+
       "<p><b>1000 BRAINS</b> is a study on brain ageing and related interindividual variability.</p>"+
-      '<p>Website: <a href="https://www.fz-juelich.de/en/inm/inm-1/expertise/tools-services-and-research-data/1000brains" target="blank">www.fz-juelich.de</a></p>'+
+      '<p>Website: <a href="http://www.fz-juelich.de/inm/inm-1/DE/Forschung/1000_Gehirne_Studie/1000_Gehirne_Studie_node.html" target="blank">www.fz-juelich.de</a></p>'+
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(50.922477, 6.361087),
@@ -611,7 +596,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://www.mcgill.ca/bic/files/bic/artboard_9-100b.jpg" class="logo">'+
+      '<img src="http://www.mcgill.ca/sites/all/themes/blofeld/images/logo_red.png" class="logo">'+
       '<h1>The Open MEG Archive (OMEGA)</h1>'+
       "<p><b>The Open MEG Archive (OMEGA)</b> is the fruit of a collaborative effort by the McConnell Brain Imaging Centre and the Université de Montréal to build a centralised repository in which to regroup MEG data in raw and processed form, for open dissemination.</p>"+
       '<p>Website: <a href="https://www.mcgill.ca/bic/resources/omega" target="blank">www.mcgill.ca</a></p>'+
@@ -626,7 +611,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://braininstitute.ca/img/logo_horz_colour.svg" class="logo">'+
+      '<img src="http://www.braininstitute.ca/sites/all/themes/obi_revision/img/logo-revision.png" class="logo">'+
       '<h1>Ontario Brain Institute</h1>'+
       "<p><b>Ontario Brain Institute</b> The Ontario Brain Institute is a provincially‐funded, not‐for‐profit research centre seeking to maximize the impact of neuroscience and establish Ontario as a world leader in brain research, commercialization and care. </p>"+
       '<p>Website: <a href="http://www.braininstitute.ca/" target="blank">www.braininstitute.ca</a></p>'+
@@ -641,7 +626,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://www.ccmu.edu.cn/images/logo2.png" class="logo">'+
+      '<img src="http://www.ccmu.edu.cn/images/sylogo.gif" class="logo">'+
       '<h1>Capital Medical University</h1>'+
       "<p><b>Capital Medical University</b> is part of the CanadaChina project and is located in Beijing China. </p>"+
       '<p>Website: <a href="http://www.ccmu.edu.cn/" target="blank">www.ccmu.edu.cn</a></p>'+
@@ -656,7 +641,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="https://www.ualberta.ca/_assets/images/ua-logo-green.svg" class="logo">'+
+      '<img src="http://www.ualberta.ca/~publicas/uofa/img/logo.svg" class="logo">'+
       '<h1>University of Alberta</h1>'+
       "<p><b>The University of Alberta</b> is located in Edmonton Alberta. </p>"+
       '<p>Website: <a href="https://ualberta.ca/" target="blank">ualberta.ca</a></p>'+
@@ -686,7 +671,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      // '<img src="http://www.bnu.edu.cn/3/imgs/BNU-logo.png" class="logo">'+
+      '<img src="http://www.bnu.edu.cn/3/imgs/BNU-logo.png" class="logo">'+
       '<h1>He Lab @ Beijing Normal University</h1>'+
       '<p><b>The He Lab</b> is located at the Beijing Normal University.</p>'+
       '<p>Website: <a href="http://helab.bnu.edu.cn/" target="blank">helab.bnu.edu.cn</a></p>'+
@@ -701,7 +686,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      // '<img src="http://www.cneuro.cu/templates/vt_science/css/styles/vt_logo_style4.png" class="logo">'+
+      '<img src="http://www.cneuro.cu/templates/vt_science/css/styles/vt_logo_style4.png" class="logo">'+
       '<h1>CNEURO</h1>'+
       '<p><b>The Cuban Neurosciences Center (CNEURO)</b> is located in Havana, Cuba.</p>'+
       '<p>Website: <a href="http://www.cneuro.cu/" target="blank">cneuro.cu</a></p>'+
