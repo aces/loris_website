@@ -701,7 +701,7 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      // '<img src="http://www.cneuro.cu/templates/vt_science/css/styles/vt_logo_style4.png" class="logo">'+
+      '<img src="http://www.cneuro.cu/templates/vt_science/css/styles/vt_logo_style4.png" class="logo">'+
       '<h1>CNEURO</h1>'+
       '<p><b>The Cuban Neurosciences Center (CNEURO)</b> is located in Havana, Cuba.</p>'+
       '<p>Website: <a href="http://www.cneuro.cu/" target="blank">cneuro.cu</a></p>'+
