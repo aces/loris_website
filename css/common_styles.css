@@ -1005,6 +1005,19 @@ footer img:hover {
 	display: none !important;
 }
 
+/* Section - New MAP */
+/**************************/
+
+#new-map {
+	height: auto;
+	width: 100%;
+	padding: 100px 7.8% 100px 7.8%;
+}
+img.flat-map {
+	width: 100%;
+	height: auto;
+}
+
 /* Section - top button */
 /**************************/
 .top-button {
